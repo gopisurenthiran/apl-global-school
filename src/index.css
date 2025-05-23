@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=YourFont&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Fonts (add @font-face here if local fonts are used) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/inter-v3-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Agatho';
+  src: url('/src/assets/fonts/Agatho.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('/src/assets/fonts/GillSans.woff2') format('woff2');
+}
