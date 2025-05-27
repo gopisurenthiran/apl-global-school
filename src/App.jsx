@@ -14,7 +14,7 @@ function App() {
       <Header/>
       <Banner/>
       <Tab/>
-      <CreativeTabs />
+      {/* <CreativeTabs /> */}
       <Footer/>
   
     </>
