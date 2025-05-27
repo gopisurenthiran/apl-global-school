@@ -5,6 +5,8 @@ import Tab from './components/Tab'
 import CreativeTabs from './components/TabSection'
 import Footer from './components/Footer'
 import './App.css'
+import AdmissionsBanner from './components/AdmissionsBanner'
+import GallerySection from './components/GallerySection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +17,8 @@ function App() {
       <Banner/>
       <Tab/>
       {/* <CreativeTabs /> */}
+      <AdmissionsBanner />
+      <GallerySection />
       <Footer/>
   
     </>
