@@ -1,5 +1,8 @@
 import { useState } from 'react'
-import Header  from './components/Header'  
+import Header  from './components/Header' 
+import Banner from './components/banner'
+import Tab from './components/Tab'
+import CreativeTabs from './components/TabSection'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -9,12 +12,11 @@ function App() {
   return (
     <>
       <Header/>
-      {/* Main Content */}
-      <main className="p-4">
-        {/* ... */}
-      </main>
+      <Banner/>
+      <Tab/>
+      <CreativeTabs />
       <Footer/>
-      {/* Footer */}
+  
     </>
   )
 }

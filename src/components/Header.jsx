@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="text-xl font-bold">
-          <a href="#home" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img src={logo} alt="APL Logo" className="h-15 w-20 mr-2" />
           </a>
         </div>

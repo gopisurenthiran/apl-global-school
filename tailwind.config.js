@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+     "./node_modules/flowbite-react/**/*.js",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
       colors: {
         primary: '#8167A0',
         secondary: '#C3D452',
+        third: '#7B4495',
       },
       fontFamily: {
         primary: ['Agatho', 'serif'],
@@ -25,5 +28,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 }
