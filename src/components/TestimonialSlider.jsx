@@ -92,10 +92,10 @@ export default function TestimonialSlider() {
           style={{ backgroundImage: `url(${paper})`, }}
         >
     <div className=" py-16 px-4 text-center relative overflow-hidden" >
-      <h2 className="text-2xl md:text-4xl font-bold font-primary text-third m-4">
+      <h2 className="text-2xl md:text-4xl font-bold font-primary text-primary m-4">
         Testimonials
       </h2>
-      <p className="text-third mb-10 font-primary text-2xl">
+      <p className="text-primary mb-10 font-primary text-lg">
         Voices that inspire our journey
       </p>
 
@@ -103,9 +103,9 @@ export default function TestimonialSlider() {
         {/* Prev Button */}
         <button
           onClick={goToPrev}
-          className="absolute left-4 md:left-12 z-30 bg-white-900 border border-white-300 rounded-full p-2 hover:bg-gray-100 transition"
+          className="absolute left-4 md:left-12 z-30 bg-white border border-gray-300 rounded-full p-2 hover:bg-gray-100 transition"
         >
-          <ChevronLeft className="w-6 h-6 text-third" />
+          <ChevronLeft className="w-6 h-6 text-purple-600" />
         </button>
 
         {/* Slides */}
@@ -115,7 +115,7 @@ export default function TestimonialSlider() {
             <div
               key={index}
               className={`absolute transition-all duration-500 ease-in-out transform rounded-xl p-6 shadow-lg text-left w-[300px] md:w-[450px] ${
-                isActive ? 'bg-secondary text-white' : 'bg-white text-[#000000]'
+                isActive ? 'bg-lime-400 text-white' : 'bg-white text-gray-700'
               } ${getPositionClass(index)}`}
             >
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -134,8 +134,8 @@ export default function TestimonialSlider() {
                       i < testimonial.rating
                         ? isActive
                           ? 'text-white'
-                          : 'text-white-400'
-                        : 'text-white-300'
+                          : 'text-gray-400'
+                        : 'text-gray-300'
                     }`}
                     fill={
                       i < testimonial.rating
@@ -160,9 +160,9 @@ export default function TestimonialSlider() {
         {/* Next Button */}
         <button
           onClick={goToNext}
-          className="absolute right-4 md:right-12 z-30 bg-white-900 border border-white-700 rounded-full p-2 hover:bg-gray-100 transition"
+          className="absolute right-4 md:right-12 z-30 bg-white border border-gray-300 rounded-full p-2 hover:bg-gray-100 transition"
         >
-          <ChevronRight className="w-6 h-6 text-third" />
+          <ChevronRight className="w-6 h-6 text-purple-600" />
         </button>
       </div>
     </div>

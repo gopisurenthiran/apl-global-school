@@ -6,7 +6,7 @@ import 'flowbite';
 import EnquiryForm from './HomeForm';
 import SocialIcon from './SocialIcons';
 
-const BannerWithForm = () => {
+const Banner = () => {
   return (
     <>
     <div className="relative w-full h-screen md-h:screen sm-h:screen overflow-hidden">
@@ -77,4 +77,4 @@ const BannerWithForm = () => {
   );
 };
 
-export default BannerWithForm;
+export default Banner;

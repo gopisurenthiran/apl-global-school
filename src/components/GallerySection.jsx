@@ -55,7 +55,6 @@ export default function GallerySection() {
             where learners shine beyond the classroom, showcasing their talents,
             supporting their peers, and embracing the joy of movement.
           </p>
-
           <p className="text-gray-700 text-sm sm:text-base font-secondary">
             From sprints to relays, long jumps to tug-of-war, every event is an
             opportunity for students to challenge themselves, cheer on their
@@ -91,35 +90,39 @@ export default function GallerySection() {
             ))}
           </ul>
 
-          <button className="mt-4 px-4 py-2 bg-secondary text-white rounded hover:bg-[#c3d452c9]transition font-primary text-sm sm:text-base">
+          <button className="mt-4 px-4 py-2 bg-secondary text-white rounded hover:bg-[#c3d452c9] transition font-primary text-sm sm:text-base">
             View More Photos
           </button>
         </div>
 
-        {/* Right Side Image Stack */}
-        <div className="md:w-full lg:w-1/2 relative h-[300px] sm:h-[360px] md:h-[400px] md:flex items-center justify-center">
-          {images.map((img, index) => {
-            const diff = index - activeIndex;
-            const scale = index === activeIndex ? 1.05 : 1;
-            const zIndex = images.length - Math.abs(diff);
-            const translateX = diff * 50; // Adjust for responsiveness
+        {/* Right: Responsive Image Stack */}
+        <div className="w-full lg:w-1/2 relative flex justify-center items-center min-h-[280px] sm:min-h-[360px] md:min-h-[400px]">
+          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md flex justify-center items-center">
+            {images.map((img, index) => {
+              const diff = index - activeIndex;
+              const scale = index === activeIndex ? 1.05 : 1;
+              const zIndex = images.length - Math.abs(diff);
+              const translateX = diff * 40; // smaller translate for mobile
 
-            return (
-              <img
-                key={index}
-                src={img}
-                alt={`Slide ${index + 1}`}
-                onClick={() => setActiveIndex(index)}
-                className={`absolute rounded-xl shadow-md object-cover cursor-pointer transition-all duration-300 ease-in-out ${
-                  index === activeIndex ? "h-72 w-44 sm:h-80 sm:w-52" : "h-60 w-40 sm:h-64 sm:w-44"
-                }`}
-                style={{
-                  transform: `translateX(${translateX}px) scale(${scale})`,
-                  zIndex: zIndex,
-                }}
-              />
-            );
-          })}
+              return (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Slide ${index + 1}`}
+                  onClick={() => setActiveIndex(index)}
+                  className={`absolute rounded-xl shadow-md object-cover cursor-pointer transition-all duration-300 ease-in-out ${
+                    index === activeIndex
+                      ? "h-64 w-40 sm:h-72 sm:w-48"
+                      : "h-56 w-36 sm:h-64 sm:w-44"
+                  }`}
+                  style={{
+                    transform: `translateX(${translateX}px) scale(${scale})`,
+                    zIndex: zIndex,
+                  }}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

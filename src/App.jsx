@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Header  from './components/Header' 
-import Banner from './components/banner'
 import Tab from './components/Tab'
 import CreativeTabs from './components/TabSection'
 import Footer from './components/Footer'
@@ -14,14 +13,16 @@ import EventList from './components/EventList'
 import TestimonialSlider from './components/TestimonialSlider'
 import CardSlider from './components/CardSlider'
 import ContactUs from './components/ContactUs'
+import Banner from './components/Banner'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
       <Header/>
-      <Banner/>
+      {/* <Banner/> */}
+      <Banner />
       <Tab/>
       <AdmissionsBanner />
       <GallerySection />

@@ -2,19 +2,22 @@ import EventBanner from '../assets/EventBanner.svg';
 
 export default function UpcommingEvents() {
   return (
-    <div className="w-full max-w-7xl mx-auto bg-white py-16 px-4 md:px-20">
-        <h2 className="text-center text-3xl md:text-4xl font-bold font-primary text-third mb-5 ">
-        Upcoming Events and News    <br />Stay  updated with our latest events
+    <div className="w-full max-w-7xl mx-auto bg-white py-12 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-20">
+      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold font-primary text-third mb-4 sm:mb-6">
+        Upcoming Events and News <br className="hidden sm:block" /> 
+        <span className="text-base sm:text-lg font-normal">
+          Stay updated with our latest events
+        </span>
       </h2>
-      {/* <p className="text-center text-2xl font-semibold font-primary text-purple-700 mb-12">
-        Capturing joy, Learning and Achievement
-      </p> */}
 
-    <img
-        src={EventBanner}
-        alt="Admissions Banner"
-        className="w-full h-auto object-contain"
-    />
+      {/* Image section */}
+      <div className="w-full">
+        <img
+          src={EventBanner}
+          alt="Upcoming Events Banner"
+          className="w-full h-auto object-contain rounded-lg shadow-sm"
+        />
+      </div>
     </div>
   );
 }

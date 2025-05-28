@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { CalendarDays, Clock } from 'lucide-react';
-import EventImage from '../assets/Img-3.jpg'; // Fallback image
+import EventImage from '../assets/Img-3.jpg';
 
-const dummyEvents = [
+const Events = [
   {
     id: 1,
     time: '9am - 12pm',
@@ -42,35 +42,76 @@ const dummyEvents = [
     moreCount: 60,
     image: EventImage,
   },
+   {
+    id: 4,
+    time: '2pm - 4pm',
+    date: '30th October, 2025',
+    title: 'Vivamus vestibulum nulla nec ante. Praesent placerat risus.',
+    attendees: [
+      'https://i.pravatar.cc/32?img=7',
+      'https://i.pravatar.cc/32?img=8',
+      'https://i.pravatar.cc/32?img=9',
+    ],
+    moreCount: 60,
+    image: EventImage,
+  },
+   {
+    id: 5,
+    time: '2pm - 4pm',
+    date: '30th October, 2025',
+    title: 'Vivamus vestibulum nulla nec ante. Praesent placerat risus.',
+    attendees: [
+      'https://i.pravatar.cc/32?img=7',
+      'https://i.pravatar.cc/32?img=8',
+      'https://i.pravatar.cc/32?img=9',
+    ],
+    moreCount: 60,
+    image: EventImage,
+  },
+   {
+    id: 6,
+    time: '2pm - 4pm',
+    date: '30th October, 2025',
+    title: 'Vivamus vestibulum nulla nec ante. Praesent placerat risus.',
+    attendees: [
+      'https://i.pravatar.cc/32?img=7',
+      'https://i.pravatar.cc/32?img=8',
+      'https://i.pravatar.cc/32?img=9',
+    ],
+    moreCount: 60,
+    image: EventImage,
+  },
 ];
 
 const pageSize = 2;
 
 export default function EventList() {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(dummyEvents.length / pageSize);
+  const totalPages = Math.ceil(Events.length / pageSize);
 
-  const paginatedEvents = dummyEvents.slice(
+  const paginatedEvents = Events.slice(
     (currentPage - 1) * pageSize,
     currentPage * pageSize
   );
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-1">
-      <div className="space-y-10">
+    <div className="max-w-6xl mx-auto px-4 py-10">
+      <div className="space-y-8">
         {paginatedEvents.map((event) => (
           <div
             key={event.id}
-            className="bg-white rounded-xl shadow-md p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 relative"
+            className="bg-white rounded-xl shadow-md p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4"
           >
-            {/* Left: Image */}
-            <img
-              src={event.image}
-              alt="Event"
-              className="w-full sm:w-28 h-44 sm:h-28 rounded-xl object-cover"
-            />
+            {/* Event Image */}
+            <div className="w-full sm:w-32 h-48 sm:h-28 flex-shrink-0">
+              <img
+                src={event.image}
+                alt="Event"
+                className="w-full h-full object-cover rounded-xl"
+              />
+            </div>
 
-            {/* Middle: Info */}
+            {/* Event Details */}
             <div className="flex-1 w-full sm:px-4">
               <div className="flex flex-wrap items-center gap-3 text-sm text-gray-600 mb-2">
                 <span className="flex items-center gap-1">
@@ -88,14 +129,9 @@ export default function EventList() {
               </p>
             </div>
 
-            {/* Vertical line (optional) */}
-            <div className="hidden sm:flex flex-col items-center mx-2">
-              <div className="w-px h-20 bg-gray-300 rounded" />
-            </div>
-
-            {/* Right: Actions */}
-            <div className="flex sm:flex-col sm:items-end w-full sm:w-auto justify-between items-center gap-3">
-              <button className="border border-[#000000] text-blue-500 px-4 py-1 rounded-full text-sm hover:bg-gray-50">
+            {/* Ticket & Attendees */}
+            <div className="flex flex-col sm:items-end w-full sm:w-auto gap-3 mt-3 sm:mt-0">
+              <button className="border border-gray-400 text-blue-500 px-4 py-1 rounded-full text-sm hover:bg-gray-50">
                 Buy Tickets
               </button>
               <div className="flex items-center -space-x-2">
@@ -107,7 +143,7 @@ export default function EventList() {
                     className="w-8 h-8 rounded-full border-2 border-white"
                   />
                 ))}
-                <span className="w-8 h-8 rounded-full bg-blue-500 text-[#FFFFFF] text-xs flex items-center justify-center font-medium border-2 border-white z-10">
+                <span className="w-8 h-8 rounded-full bg-blue-500 text-white text-xs flex items-center justify-center font-medium border-2 border-white z-10">
                   {event.moreCount}+
                 </span>
                 <span className="text-blue-500 text-xs pl-2 z-10">More</span>
