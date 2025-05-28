@@ -8,7 +8,7 @@ export default function ContentBanner() {
         {/* Left Side with Text Overlay */}
         <div className="relative w-full">
           {/* Text Overlay */}
-          <div className="absolute top-1/2 left-20 transform -translate-y-1/2 text-primary max-w-md z-10">
+          <div className="absolute top-1/2 left-20 transform -translate-y-1/2 text-third max-w-md z-10">
             <h4 className="text-lg md:text-2xl font-semibold leading-relaxed">
               We believe that every child is a unique learner who deserves a flexible, customised,
               and personalized educational environment. We work with children to ensure that we meet

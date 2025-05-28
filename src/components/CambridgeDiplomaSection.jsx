@@ -46,7 +46,7 @@ export default function CambridgeDiplomaSection() {
 
   return (
     <section className="py-16 px-4 md:px-16 bg-white">
-      <h2 className="text-center text-4xl md:text-5xl font-bold font-primary text-purple-700 mb-10">
+      <h2 className="text-center text-4xl md:text-5xl font-bold font-primary text-third mb-10">
         Centre for Cambridge International Diploma <br /> in -reaching and
         Learning
       </h2>
@@ -107,11 +107,11 @@ export default function CambridgeDiplomaSection() {
             by Cambridge Assessment International Education.
           </p>
 
-          <p className="text-primary font-semibold mb-2">
+          <p className="text-third font-semibold mb-2">
             Stories Told Through Every Frame
           </p>
 
-          <h3 className="text-xl md:text-2xl font-semibold text-primary mb-4">
+          <h3 className="text-xl md:text-2xl font-semibold text-third mb-4">
             THINKERS VOICE OF YOUNG THINKERS
           </h3>
 
@@ -129,9 +129,9 @@ export default function CambridgeDiplomaSection() {
                   onClick={() => toggleAccordion(index)}
                 >
                   <span
-                    className={`text-sm font-bold w-6 h-6 flex items-center justify-center border border-purple-500 text-purple-500 rounded-full transition duration-200 ${
+                    className={`text-sm font-bold w-6 h-6 flex items-center justify-center border border-secondary text-secondary rounded-full transition duration-200 ${
                       openIndex === index
-                        ? "bg-purple-500 text-white"
+                        ? "bg-secondary text-white"
                         : "bg-white"
                     }`}
                   >
@@ -140,7 +140,7 @@ export default function CambridgeDiplomaSection() {
                   <span>{item.title}</span>
                 </button>
                 {openIndex === index && (
-                  <p className="mt-2 text-gray-600 text-sm font-secondary pl-6 border-l-4 border-purple-300 transition-all duration-300 ease-in-out">
+                  <p className="mt-2 text-gray-600 text-sm font-secondary pl-6 border-l-4 border-secondary transition-all duration-300 ease-in-out">
                     {item.content}
                   </p>
                 )}

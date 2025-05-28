@@ -186,10 +186,7 @@ The subject is further divided into three components: Creative movement and Perf
       subheading: [
         {
           title: "ART",
-          description: `<section class="art-program px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  
-  
-  <p class="mb-4">
+          description: `<p class="mb-4">
     The Art Program at APL Global School is designed to stimulate young minds to reflect and express themselves creatively. 
     The program exposes children to artistically respond and understand their environment. Children will be exploring the 
     evolution of art by understanding local and world art history. They will be encouraged to identify the significance of 
@@ -213,15 +210,12 @@ The subject is further divided into three components: Creative movement and Perf
     By grade 8, the students are well equipped to take on the IGCSE Art & Design curriculum. By extension, 
     Art & Design is provided as a subject at A & AS level as well.
   </p>
-</section>
+
 `,
         },
         {
           title: "Music",
-          description: `<section class="music-program px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  
-  
-  <p class="mb-4">
+          description: `<p class="mb-4">
     Even before recorded history, people created music, whether through drumming, singing or chanting. 
     Some of our strongest emotions may be brought on by listening to a piece of music.
   </p>
@@ -247,15 +241,11 @@ The subject is further divided into three components: Creative movement and Perf
     They have worked in collaboration with leading musicians in the industry, composing music pieces for school fundraisers and awareness programmes. 
     This has led to a profound sense of individuality and, on a broader social level, the ability of music to foster community while creating art.
   </p>
-</section>
 `,
         },
         {
           title: "Sports",
-          description: `<section class="sports-program px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  
-
-  <p class="mb-4">
+          description: `<p class="mb-4">
     Sports have always been an integral part of the APL curriculum. The path shown by
     Dr. Kannan Pugazhendi— a renowned sports physician and fitness consultant — is being carried forward ably by the sports faculty. 
     With a firm belief that the physical state impacts mental energies, APL ensures that its students are exposed to regular fitness checks, 
@@ -280,15 +270,11 @@ The subject is further divided into three components: Creative movement and Perf
     The games played at APL include basketball, football, cricket, badminton, table tennis, throw ball, volleyball 
     and a range of athletic sports.
   </p>
-</section>
 `,
         },
         {
           title: "DMAC (Drama, Music, Art, and Creative Movement) ",
-          description: `<section class="dmac-program px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  
-
-  <p class="mb-4">
+          description: `<p class="mb-4">
     Students in the Lower Secondary school have the option of choosing any one of the four Creative forms of Expression: 
     Drama, Music, Art, and Creative Movements (DMAC). They will be assessed on their progress at the end of each term.
   </p>
@@ -358,7 +344,6 @@ The subject is further divided into three components: Creative movement and Perf
       <strong>Rhythm & Fitness</strong>, and <strong>Dance Studies</strong>.
     </p>
   </div>
-</section>
 `,
         },
       ],
@@ -369,53 +354,29 @@ The subject is further divided into three components: Creative movement and Perf
     content: {
       heading: "Expressions",
       subtitle: "EXPRESSIONS CLUBS",
-      description: `<section class="expressions-section px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  
-
-  <p class="mb-4">
-    ‘Expressions’ are a collection of clubs that provide opportunities for students to engage in curricular activities 
-    outside the classroom – Music, Environment, Technology, Dance, Theatre, Debating and Public Speaking amongst other things.
-  </p>
-
-  <p class="mb-4">
-    Students go on field trips, interact with professionals from different fields and participate in organizing various 
-    events to complete the experience.
-  </p>
-
-  <p class="mb-4">
-    Participation in national and international competitions like the MUN, inter-school cultural events, and talent competitions 
-    across various interest areas helps build self-confidence and offers opportunities for students to broaden their horizons.
-  </p>
-
-  <p class="mb-4">
-    Students hone their leadership abilities as they manage all major school events, participate in the school student council, 
-    and volunteer to conduct events. These activities mimic actual responsibilities they will be shouldering in the real world, 
-    where leadership skills become an indispensable requirement.
-  </p>
-</section>
- `,
+      description: `
+    ‘Expressions’ are a collection of clubs that provide opportunities for students to engage in curricular activities outside the classroom – Music, Environment, Technology, Dance, Theatre, Debating and Public Speaking amongst other things.
+ Students go on field trips, interact with professionals from different fields and participate in organizing various events to complete the experience.
+Participation in national and international competitions like the MUN, inter-school cultural events, and talent competitions across various interest areas helps build self-confidence and offers opportunities for students to broaden their horizons.
+Students hone their leadership abilities as they manage all major school events, participate in the school student council, and volunteer to conduct events. These activities mimic actual responsibilities they will be shouldering in the real world, where leadership skills become an indispensable requirement.`,
       subheading: [
         {
           title: "Cookery Club",
-          description: `<section class="cookery-club-section px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  
-
-  <p class="mb-4">
+          description: `
     The aim of the Cookery Club is to explore and develop purposeful and practical skills in an authentic environment, using a wide array of opportunities and experiences.
-  </p>
+ 
 
-  <p class="mb-4">
+
     This club focuses on imparting the knowledge of balanced diets, how ingredients can be combined to prepare healthy meals, basic cooking techniques, and sensible food choices to promote a healthy lifestyle.
-  </p>
 
-  <p class="mb-4">
+
+  
     This is achieved through teaching learners new cooking skills, exploring a range of ingredients, examining recipes, understanding how to use appliances and equipment safely, and observing live cooking demonstrations.
-  </p>
+ 
 
-  <p class="mb-4">
+  
     Presentations by guest speakers and culinary experts provide the much-needed glimpse into a regulated profession for ‘experiential learning’.
-  </p>
-</section>
+ 
 `,
         },
         {
@@ -424,90 +385,72 @@ The subject is further divided into three components: Creative movement and Perf
         },
         {
           title: "Theatre Club",
-          description: `<section class="theatre-club-section px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  
-
-  <p class="mb-4">
+          description: `
     The Theatre Club aims at nurturing life-skills of students to enable them to communicate their external and internal expressions through the mode of Theatre.
-  </p>
-
-  <p class="mb-4">
+ 
     Various activities conducted in the club inculcate and emphasize aspects such as improving lateral thinking, team building, stagecraft, creative writing, voicing out opinions, mind and body language coordination, and analysing and adapting to diversities, among other objectives.
-  </p>
 
-  <p class="mb-4">
+  
     It also seeks to promote student involvement in the performing arts by supporting theatre productions and creating performance opportunities for the school cultural evening.
-  </p>
-</section>
+  
 `,
         },
         {
           title: "Math Club",
-          description: `<section class="math-club-section px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  <h2 class="text-3xl font-bold mb-6 text-center">Math Club</h2>
+          description: `
 
-  <p class="mb-4">
+ 
     The Math Club promotes and kindles the mathematical curiosity of the students through various puzzles and games. This helps strengthen the confidence of the students in problem-solving and stimulates their thinking process.
-  </p>
+  
 
-  <p class="mb-4">
     It aims at promoting a positive approach to mathematics by building concepts in unconventional ways and understanding them at a greater level.
-  </p>
+ 
 
-  <p class="mb-4">
+
     The club also serves as a space for math enthusiasts to meet and explore their common interests.
-  </p>
-</section>
+
+
 `,
         },
         {
           title: "Organic Farming Club",
-          description: `<section class="environmental-club-section px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  
-
-  <p class="mb-4">
+          description: `
     The aim of this club is to inculcate in students a sense of wonder and respect for nature and impart hands-on Education for Sustainability (EfS)*.
-  </p>
 
-  <p class="mb-4">
+
     The entire school campus is an edible, growing space that the students have created. They take part in sowing, nurturing the seedlings, harvesting, soil rejuvenation practices, learn to compost, close the loop and more.
-  </p>
+ 
 
-  <p class="mb-4">
+  
     Students also learn about water resource management, combating climate change, maintaining a resilient ecosystem and more.
-  </p>
+ 
 
-  <p class="mb-4 italic text-sm">
+
     *Education for Sustainability (EfS) is an educational approach that aims to develop students, schools and communities with the values and the motivation to take action for sustainability – in their personal lives, within their community and also at a global scale, now and in the future.
-  </p>
-</section>
+  
 `,
         },
         {
           title: "Creative Movement Club",
-          description: `<section class="dance-club-section px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
+          description: `
+    Dance, being an art of expressing one’s emotion through graceful movements without words, helps in coordinating brain and body senses making it a universally spoken tongue.
+
+
+
+    The main objective of this club is to allow the students to experience the beauty of this art form and understand its cultural relevance.
+
+
+  
+    The club organises sessions working on flexibility and strength through movements. Not only does this help the students to tap into their hidden talent but also develop a sense of rhythm.
   
 
-  <p class="mb-4">
-    Dance, being an art of expressing one’s emotion through graceful movements without words, helps in coordinating brain and body senses making it a universally spoken tongue.
-  </p>
 
-  <p class="mb-4">
-    The main objective of this club is to allow the students to experience the beauty of this art form and understand its cultural relevance.
-  </p>
-
-  <p class="mb-4">
-    The club organises sessions working on flexibility and strength through movements. Not only does this help the students to tap into their hidden talent but also develop a sense of rhythm.
-  </p>
-
-  <p class="mb-4">
     It serves as an opportunity for the students to learn about body posture, aiding as a fitness regimen and as a stress buster.
-  </p>
+  
 
-  <p class="mb-4">
+  
     Powered by professional dance artists, this club also serves to boost their self-esteem, cognizance of the aesthetic and a way of recreation.
-  </p>
-</section>
+ 
 `,
         },
         {
@@ -520,10 +463,7 @@ The subject is further divided into three components: Creative movement and Perf
         },
         {
           title: "MUN Club",
-          description: ` <section class="mun-club-section px-6 py-12 max-w-5xl mx-auto font-sans text-gray-800">
-  
-
-  <p class="mb-4">
+          description: `<p class="mb-4">
     Model United Nations is an interactive platform allowing students exposure to real world issues and arriving at real-time solutions.
   </p>
 
@@ -542,7 +482,6 @@ The subject is further divided into three components: Creative movement and Perf
   <p class="mb-4">
     Our students also had the opportunity to attend the prestigious Harvard MUN.
   </p>
-</section>
 `,
         },
         {

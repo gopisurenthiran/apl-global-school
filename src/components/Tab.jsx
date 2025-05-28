@@ -11,12 +11,18 @@ export default function TabsAccordionSection() {
 
   return (
     <section
-          className="bg-cover bg-center py-10"
-          style={{ backgroundImage: `url(${paper})` }}
+          className="bg-cover bg-center"
+          
         >
+          <div className=""  style={{ backgroundImage: `url(${paper})`, backgroundAttachment: 'cover',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+         
+        }}>
           <div className="max-w-6xl mx-auto font-primary px-4 py-12 space-y-8">
             {/* Tabs */}
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start py-20">
               {tabs.map((tab) => (
                 <button
                   key={tab}
@@ -81,7 +87,7 @@ export default function TabsAccordionSection() {
                       className={`flex items-center justify-start text-left p-2  font-semibold transition ${
                         activeSubIndex === index
                           ? " text-black"
-                          : " text-purple-800 hover:text-secondary"
+                          : " text-third hover:text-secondary"
                       }`}
                     >
                       <span className="text-xl font-bold">
@@ -93,11 +99,12 @@ export default function TabsAccordionSection() {
                 </div>
               </div>
             </div>
+            {/* Active Subheading on Top */}
             <div className="w-full">
               <div className="space-y-4 w-full">
-                {/* Active Subheading on Top */}
-                <div className="p-4 rounded shadow text-gray-700 w-full">
-                  <h4 className="text-xl font-semibold mb-2 text-purple-700">
+                
+                <div className="p-4  text-gray-700 w-full">
+                  <h4 className="text-xl font-semibold mb-2 text-third">
                     {content.subheading[activeSubIndex].title}
                   </h4>
     
@@ -111,6 +118,7 @@ export default function TabsAccordionSection() {
               </div>
             </div>
           </div>
+        </div>
         </section>
   );
 }
