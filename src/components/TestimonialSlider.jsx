@@ -95,7 +95,7 @@ export default function TestimonialSlider() {
       <h2 className="text-2xl md:text-4xl font-bold font-primary text-primary m-4">
         Testimonials
       </h2>
-      <p className="text-primary mb-10 font-primary text-lg">
+      <p className="text-primary mb-10 font-primary text-3xl">
         Voices that inspire our journey
       </p>
 
@@ -114,11 +114,11 @@ export default function TestimonialSlider() {
           return (
             <div
               key={index}
-              className={`absolute transition-all duration-500 ease-in-out transform rounded-xl p-6 shadow-lg text-left w-[300px] md:w-[450px] ${
+              className={`absolute transition-all duration-500 ease-in-out transform rounded-xl p-6  shadow-lg text-left w-[300px] md:w-[450px] ${
                 isActive ? 'bg-lime-400 text-white' : 'bg-white text-gray-700'
               } ${getPositionClass(index)}`}
             >
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}

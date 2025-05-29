@@ -14,7 +14,7 @@ export default function ContactUs() {
         
         {/* Left: Form Section */}
         <form className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 pr-4">
-          <h3 className="md:col-span-2 text-xl md:text-2xl font-semibold mb-4 text-white">
+          <h3 className="md:col-span-2 text-xl md:text-3xl font-semibold mb-4 text-white">
             We’d Love to Hear From You
           </h3>
 

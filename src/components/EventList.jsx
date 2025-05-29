@@ -124,11 +124,11 @@ export default function EventList() {
                   {event.date}
                 </span>
               </div>
-              <p className="text-base sm:text-lg font-medium text-gray-800 leading-snug">
+              <p className="text-base sm:text-lg font-secondary text-gray-800 leading-snug">
                 {event.title}
               </p>
             </div>
-
+            <div className="hidden sm:block h-20 border-l border-gray-300"></div>
             {/* Ticket & Attendees */}
             <div className="flex flex-col sm:items-end w-full sm:w-auto gap-3 mt-3 sm:mt-0">
               <button className="border border-gray-400 text-blue-500 px-4 py-1 rounded-full text-sm hover:bg-gray-50">

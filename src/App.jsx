@@ -13,7 +13,8 @@ import EventList from './components/EventList'
 import TestimonialSlider from './components/TestimonialSlider'
 import CardSlider from './components/CardSlider'
 import ContactUs from './components/ContactUs'
-import Banner from './components/Banner'
+import Banner from './components/Banner';
+
 
 function App() {
   

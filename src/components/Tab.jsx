@@ -15,14 +15,14 @@ export default function TabsAccordionSection() {
           
         >
           <div className=""  style={{ backgroundImage: `url(${paper})`, backgroundAttachment: 'cover',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
          
         }}>
           <div className="max-w-6xl mx-auto font-primary px-4 py-12 space-y-8">
             {/* Tabs */}
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start py-20">
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start lg:py-20 sm:py-0">
               {tabs.map((tab) => (
                 <button
                   key={tab}
@@ -76,7 +76,7 @@ export default function TabsAccordionSection() {
                   <p className="text-xl text-#000000 ">{content.subtitle}</p>
                 )}
                 <h2 className="text-3xl font-bold text-#000000">{content.title}</h2>
-                <p>{content.description}</p>
+                <p className="font-secondary">{content.description}</p>
     
                 {/* Accordion Buttons */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 w-full">
