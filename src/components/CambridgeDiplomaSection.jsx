@@ -97,9 +97,9 @@ export default function CambridgeDiplomaSection() {
           transition={{ duration: 1 }}
         >
           <p className="text-sm sm:text-base md:text-[16px] font-secondary mb-2">
-            <span className="font-bold">APL Global</span> is an accredited centre for the Cambridge
+            <span className="font-bold">APL Global is an accredited centre for the Cambridge
             International Diploma in Teaching and Learning (CIDTL), a professional development
-            qualification offered by Cambridge Assessment International Education.
+            qualification offered by Cambridge Assessment International Education.</span>
           </p>
 
           <p className="text-third font-semibold mt-4 mb-2 sm:text-base">

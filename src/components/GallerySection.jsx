@@ -32,7 +32,7 @@ export default function GallerySection() {
   };
 
   return (
-    <section className="w-full bg-white py-12 px-4 md:px-10 lg:px-20">
+    <section className="container mx-auto w-full bg-white py-12 px-4 md:px-10 lg:px-20">
       <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-third mb-2 font-primary">
         Gallery
       </h2>

@@ -10,7 +10,7 @@ export default function ContentBanner() {
           {/* Text Overlay */}
           {/* Text Overlay (visible only on md and above) */}
           <div className="hidden md:block absolute font-secondary top-1/2 md:left-10 lg:left-20 transform -translate-y-1/2 text-third max-w-md z-10">
-            <h4 className="lg:text-xl md:text-base font-semibold">
+            <h4 className="lg:text-2xl md:text-base leading-[2.5rem] tracking-[1.5] font-semibold">
               We believe that every child is a unique learner who deserves a flexible, customised,
               and personalized educational environment. We work with children to ensure that we meet
               their individual needs and feed their interests through our teaching and assessment strategies.

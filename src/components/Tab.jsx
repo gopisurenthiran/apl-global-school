@@ -20,7 +20,7 @@ export default function TabsAccordionSection() {
               backgroundRepeat: 'no-repeat',
          
         }}>
-          <div className="max-w-6xl mx-auto font-primary px-4 py-12 space-y-8">
+          <div className="container mx-auto font-primary px-4 py-12 space-y-8">
             {/* Tabs */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start lg:py-20 sm:py-0">
               {tabs.map((tab) => (
@@ -100,7 +100,7 @@ export default function TabsAccordionSection() {
               </div>
             </div>
             {/* Active Subheading on Top */}
-            <div className="w-full">
+            {/* <div className="w-full">
               <div className="space-y-4 w-full">
                 
                 <div className="p-4  text-gray-700 w-full">
@@ -116,7 +116,7 @@ export default function TabsAccordionSection() {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         </section>
