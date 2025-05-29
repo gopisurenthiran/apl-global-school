@@ -115,7 +115,7 @@ export default function TestimonialSlider() {
             <div
               key={index}
               className={`absolute transition-all duration-500 ease-in-out transform rounded-xl p-6  shadow-lg text-left w-[300px] md:w-[450px] ${
-                isActive ? 'bg-lime-400 text-white' : 'bg-white text-gray-700'
+                isActive ? 'bg-secondary text-white' : 'bg-white text-gray-700'
               } ${getPositionClass(index)}`}
             >
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
