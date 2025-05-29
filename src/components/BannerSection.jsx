@@ -1,5 +1,5 @@
 import React from 'react';
-import banner from '../assets/banner.png';
+import bannerImg from '../assets/Banner.png';
 import mobile from '../assets/mobileBanner.png'
 
 import 'flowbite';
@@ -24,7 +24,7 @@ const BannerSection = () => {
             >
               {/* Desktop Banner */}
               <img
-                src={banner}
+                src={bannerImg}
                 alt={`Banner ${index + 1}`}
                 className="hidden sm:block w-full h-full object-center"
               />
