@@ -13,7 +13,8 @@ import EventList from './components/EventList'
 import TestimonialSlider from './components/TestimonialSlider'
 import CardSlider from './components/CardSlider'
 import ContactUs from './components/ContactUs'
-import Banner from './components/Banner';
+import BannerSection from './components/banner'
+
 
 
 function App() {
@@ -22,8 +23,7 @@ function App() {
   return (
     <>
       <Header/>
-      {/* <Banner/> */}
-      <Banner />
+      <BannerSection/>
       <Tab/>
       <AdmissionsBanner />
       <GallerySection />

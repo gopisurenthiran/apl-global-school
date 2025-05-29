@@ -6,7 +6,7 @@ import 'flowbite';
 import EnquiryForm from './HomeForm';
 import SocialIcon from './SocialIcons';
 
-const Banner = () => {
+const BannerSection = () => {
   return (
     <>
       {/* Banner Section */}
@@ -74,4 +74,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BannerSection;
