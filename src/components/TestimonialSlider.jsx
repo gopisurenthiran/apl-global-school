@@ -5,7 +5,7 @@ import paper from "../assets/section-2-banner.png";
 
 const testimonials = [
   {
-    name: 'Hrsh Venket',
+    name: 'Harsh Venket',
     batch: '2021 batch',
     content:
       `APL had enabled me to take the subjects of my preference and pursue my interests. For instance, I was able to take up German and Classical studies, though it was not a part of the subjects offered. I was provided the platform to do more than I could have had at another school. APL had enabled me to take the subjects of my preference and pursue my interests. For instance, I was able to take up German and Classical studies, though it was not a part of the subjects offered. I was provided the platform to do more than I could have had at another school.`,    image: 'https://i.pravatar.cc/100?img=1',
