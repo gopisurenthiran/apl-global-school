@@ -113,7 +113,8 @@ Award winning projects <br />
     images: [boy, child],
     content: {
       heading: "Art",
-      subtitle: "Co-Curricular Programs ",
+       subtitle: "Creative ExpressionsPassion Meets Purpose",
+        title: "Co-Curricular Programs ",
       description: `Co-curricular programmes are disciplines that align with and mirror our academic programme. These structured disciplines are CAIE approved and bear credits.`,
       subheading: [
         {
@@ -179,9 +180,12 @@ The subject is further divided into three components: Creative movement and Perf
   },
   Music: {
     images: [boy, child],
+    
     content: {
+
       heading: "Music",
-      subtitle: "Co-Curricular Programs ",
+      subtitle: "Creative ExpressionsPassion Meets Purpose",
+    title: "Co-Curricular Programs ",
       description: `Co-curricular programmes are disciplines that align with and mirror our academic programme. These structured disciplines are CAIE approved and bear credits.`,
       subheading: [
         {
@@ -351,9 +355,11 @@ The subject is further divided into three components: Creative movement and Perf
   },
   Expressions: {
     images: [boy, child],
+    
     content: {
       heading: "Expressions",
-      subtitle: "EXPRESSIONS CLUBS",
+      subtitle: "Creative ExpressionsPassion Meets Purpose",
+    title: "EXPRESSIONS CLUBS ",
       description: `
     ‘Expressions’ are a collection of clubs that provide opportunities for students to engage in curricular activities outside the classroom – Music, Environment, Technology, Dance, Theatre, Debating and Public Speaking amongst other things.
  Students go on field trips, interact with professionals from different fields and participate in organizing various events to complete the experience.

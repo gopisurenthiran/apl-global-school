@@ -1,5 +1,5 @@
 import { useState } from "react";
-import paper from "../assets/section-2-banner.png";
+import paper from "../assets/graph.svg";
 import tabData from '../data/data';
 
 export default function TabsAccordionSection() {
@@ -11,15 +11,15 @@ export default function TabsAccordionSection() {
 
   return (
     <section
-          className="bg-cover bg-center"
-          
-        >
-          <div className=""  style={{ backgroundImage: `url(${paper})`, backgroundAttachment: 'cover',
+          className="p-10"
+           style={{ backgroundImage: `url(${paper})`, backgroundAttachment: 'cover',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
          
-        }}>
+        }}
+        >
+          <div className="" >
           <div className="container mx-auto font-primary px-4 py-12 space-y-8">
             {/* Tabs */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start lg:py-20 sm:py-0">

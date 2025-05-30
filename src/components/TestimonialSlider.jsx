@@ -91,15 +91,15 @@ export default function TestimonialSlider() {
           className="bg-cover bg-center bg-no-repeat py-14"
           style={{ backgroundImage: `url(${paper})`, }}
         >
-    <div className=" py-16 px-4 text-center relative overflow-hidden" >
+    <div className=" text-center relative overflow-hidden p-10" >
       <h2 className="text-2xl md:text-4xl font-bold font-primary text-primary m-4">
         Testimonials
       </h2>
-      <p className="text-primary mb-10 font-primary text-3xl">
+      <p className="text-primary mb-10 font-primary text-xl">
         Voices that inspire our journey
       </p>
-
-      <div className="relative flex items-center justify-center h-[400px] md:h-[450px]">
+    </div>
+      <div className="relative p-10 flex items-center justify-center h-[400px] md:h-[450px]">
         {/* Prev Button */}
         <button
           onClick={goToPrev}
@@ -165,7 +165,7 @@ export default function TestimonialSlider() {
           <ChevronRight className="w-6 h-6 text-purple-600" />
         </button>
       </div>
-    </div>
+    
     </section>
   );
 }
