@@ -88,18 +88,20 @@ export default function TestimonialSlider() {
 
   return (
     <section
-          className="bg-cover bg-center bg-no-repeat py-14"
+          className="bg-cover bg-center bg-no-repeat py-14 "
           style={{ backgroundImage: `url(${paper})`, }}
         >
-    <div className=" text-center relative overflow-hidden p-10" >
-      <h2 className="text-2xl md:text-4xl font-bold font-primary text-primary m-4">
+    <div className=" text-center mt-5" >
+      <div className="mb-10">
+        <h2 className="text-2xl md:text-4xl font-bold font-primary text-primary m-4">
         Testimonials
       </h2>
-      <p className="text-primary mb-10 font-primary text-xl">
+      <p className="text-primary font-primary text-xl">
         Voices that inspire our journey
       </p>
-    </div>
-      <div className="relative p-10 flex items-center justify-center h-[400px] md:h-[450px]">
+      </div>
+    
+      <div className="relative flex items-center overflow-hidden justify-center h-[600px] md:h-[600px]">
         {/* Prev Button */}
         <button
           onClick={goToPrev}
@@ -126,7 +128,7 @@ export default function TestimonialSlider() {
                 />
               </div>
 
-              <div className="mt-10 flex justify-center gap-1">
+              <div className="mt-5 flex justify-center gap-1">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
@@ -165,7 +167,7 @@ export default function TestimonialSlider() {
           <ChevronRight className="w-6 h-6 text-purple-600" />
         </button>
       </div>
-    
+    </div>
     </section>
   );
 }
