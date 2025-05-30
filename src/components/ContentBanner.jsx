@@ -1,4 +1,4 @@
-import Fream from '../assets/section.jpg';
+import Fream from '../assets/Section.jpg';
 
 import RightBanner from '../assets/mobile.jpg';
 
