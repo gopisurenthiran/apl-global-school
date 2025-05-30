@@ -2,12 +2,12 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 export default function EnquiryForm() {
   return (
-    <div className="relative w-full font-secondary flex items-center justify-end">
+    <div className="relative w-full h-screen font-secondary flex items-center justify-end p-6">
       {/* Form Card */}
       <div className="bg-third text-lime-200  p-6 rounded-2xl shadow-xl max-w-md w-xl space-y-4">
         <h2 className="text-lg text-secondary font-semibold">Welcome to APL Global School</h2>
         <form className="space-y-4">
-          <div className="grid grid-cols-2 gap-3x">
+          <div className="grid grid-cols-2 gap-3">
             <input
               type="text"
               placeholder="Parent Name"
