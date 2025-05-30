@@ -10,72 +10,79 @@ export default function ContactUs() {
       </h2>
 
       {/* Form + Image container */}
-      <div className="bg-third text-white rounded-xl shadow-2xl p-6 md:p-10 flex flex-col md:flex-row overflow-hidden">
-        
-        {/* Left: Form Section */}
-        <form className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 pr-4">
-          <h3 className="md:col-span-2 text-xl md:text-3xl font-semibold mb-4 text-white">
-            We’d Love to Hear From You
-          </h3>
+  <div className="bg-third text-white rounded-xl shadow-2xl p-6 md:p-10 flex flex-col md:flex-row overflow-hidden">
 
-          <input
-            type="text"
-            placeholder="Parent Name"
-            className="bg-[#6f3d86] px-3 py-2 text-white font-secondary border-none rounded outline-none"
-          />
-          <input
-            type="text"
-            placeholder="Student Name"
-            className="bg-[#6f3d86] px-3 py-2 text-white font-secondary border-none rounded outline-none"
-          />
+  {/* Left: Form Section */}
+  <form className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 pr-4">
+    <h3 className="md:col-span-2 text-xl md:text-3xl font-semibold mb-4">
+      We’d Love to Hear From You
+    </h3>
 
-          <select className="bg-[#6f3d86] px-3 py-2 text-white font-secondary rounded border-none outline-none">
-            <option>Applying For</option>
-            <option>Nursery</option>
-            <option>Grade 1</option>
-          </select>
-          <input
-            type="email"
-            placeholder="Email"
-            className="bg-[#6f3d86] px-3 py-2 text-white font-secondary rounded border-none outline-none"
-          />
+    <input
+      type="text"
+      placeholder="Parent Name"
+      className="bg-[#6f3d86] text-white placeholder-white font-secondary px-4 py-3 rounded outline-none border-none"
+    />
+    <input
+      type="text"
+      placeholder="Student Name"
+      className="bg-[#6f3d86] text-white placeholder-white font-secondary px-4 py-3 rounded outline-none border-none"
+    />
 
-          <input
-            type="tel"
-            placeholder="Phone No"
-            className="bg-[#6f3d86] px-3 py-2 text-white font-secondary rounded border-none outline-none"
-          />
-          <select className="bg-[#6f3d86] px-3 py-2 text-white font-secondary rounded border-none outline-none">
-            <option>Preferred Location</option>
-            <option>Chennai</option>
-            <option>Bangalore</option>
-          </select>
+    <select
+      className="bg-[#6f3d86] text-white font-secondary px-4 py-3 rounded outline-none border-none"
+      defaultValue=""
+    >
+      <option value="" disabled className="text-white">Applying For</option>
+      <option>Nursery</option>
+      <option>Grade 1</option>
+    </select>
+    <input
+      type="email"
+      placeholder="Email"
+      className="bg-[#6f3d86] text-white placeholder-white font-secondary px-4 py-3 rounded outline-none border-none"
+    />
 
-          <textarea
-            placeholder="Your Message"
-            className="md:col-span-2 bg-[#6f3d86] px-3 py-2 text-white font-secondary rounded border-none outline-none"
-            rows="3"
-          ></textarea>
+    <input
+      type="tel"
+      placeholder="Phone No"
+      className="bg-[#6f3d86] text-white placeholder-white font-secondary px-4 py-3 rounded outline-none border-none"
+    />
+    <select
+      className="bg-[#6f3d86] text-white font-secondary px-4 py-3 rounded outline-none border-none"
+      defaultValue=""
+    >
+      <option value="" disabled className="text-white">Preferred Location</option>
+      <option>Chennai</option>
+      <option>Bangalore</option>
+    </select>
 
-          <div className="md:col-span-2">
-            <button
-              type="submit"
-              className="bg-secondary text-white font-medium px-6 py-2 rounded-md hover:bg-[#c3d452c9] transition"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
+    <textarea
+      placeholder="Your Message"
+      rows="3"
+      className="md:col-span-2 bg-[#6f3d86] text-white placeholder-white font-secondary px-4 py-3 rounded outline-none border-none"
+    ></textarea>
 
-        {/* Right: Image Section */}
-        <div className="w-full md:w-1/2 flex items-end justify-left ">
-          <img
-            src={ContactBanner}
-            alt="Smiling girl"
-            className="w-full h-full object-contain max-h-[400px]"
-          />
-        </div>
-      </div>
+    <div className="md:col-span-2 mt-2">
+      <button
+        type="submit"
+        className="bg-secondary text-white font-medium px-6 py-3 rounded-md hover:bg-[#c3d452c9] transition"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+
+  {/* Right: Image Section */}
+  <div className="w-full md:w-1/2 flex items-end justify-center mt-6 md:mt-0">
+    <img
+      src={ContactBanner}
+      alt="Smiling girl"
+      className="w-full h-auto object-contain max-h-[400px]"
+    />
+  </div>
+</div>
+
     </div>
   );
 }
