@@ -42,8 +42,8 @@ export default function CambridgeDiplomaSection() {
   };
 
   return (
-    <section className="py-12 px-4 sm:px-6 md:px-10 lg:px-16 bg-white">
-      <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold font-primary text-third mb-8 sm:mb-10 leading-tight">
+    <section className="py-12 px-4 sm:px-6 md:px-10 lg:px-16 bg-white overflow-hidden">
+      <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold font-primary text-third mb-8 sm:mb-10 overflow-hidden leading-tight">
         Centre for Cambridge International Diploma <br className="hidden sm:block" /> in Teaching and
         Learning
       </h2>

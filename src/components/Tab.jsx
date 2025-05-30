@@ -20,7 +20,7 @@ export default function TabsAccordionSection() {
         }}
         >
           <div className="" >
-          <div className="container mx-auto font-primary px-4 py-12 space-y-8">
+          <div className="container mx-auto font-primary px-4 py-12 overflow-hidden space-y-8">
             {/* Tabs */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start lg:py-20 sm:py-0">
               {tabs.map((tab) => (
