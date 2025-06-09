@@ -12,11 +12,8 @@ import UpcommingEvents from './pages/UpcomingEvent'
 import EventList from './pages/EventList'
 import TestimonialSlider from './pages/TestimonialSlider'
 import CardSlider from './pages/CardSlider'
-// import ContactUs from './pages/ContactUs'
+import ContactUs from './pages/ContactUs'
 import BannerSection from './pages/BannerSection'
-import TestimonialCarousel from './pages/Home/TestimonialCarousel'
-import ContactUs from './pages/Contact'
-import TabsSection from './pages/Home/TabsSection'
 
 
 
@@ -27,17 +24,14 @@ function App() {
     <>
       <Header/>
       <BannerSection/>
-      {/* <Tab/> */}
-      <TabsSection />
+      <Tab/>
       <AdmissionsBanner />
       <GallerySection />
       <CambridgeDiplomaSection />
       <ContentBanner />
       <UpcommingEvents />
       <EventList />
-      {/* <TestimonialSlider /> */}
-      <TestimonialCarousel />
-      {/* <ContactUs /> */}
+      <TestimonialSlider />
       <ContactUs />
       <Footer/>
   
