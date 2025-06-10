@@ -4,10 +4,6 @@ import bigImg2 from "@/assets/tab-2.png";
 import smallImg2 from "@/assets/tab-1.png";
 import bgGrid from "@/assets/graph2.png";
 
-import icon1 from "@/assets/icon/1.png";
-import icon2 from "@/assets/icon/2.png";
-import icon3 from "@/assets/icon/3.png";
-import icon4 from "@/assets/icon/4.png";
 // Tabs list
 export const tabs = ["Meraki", "Art", "Music", "Expressions"];
 
@@ -19,11 +15,30 @@ export const tabContent = {
     heading :" BEYOND CLASSROOM",
     description: `Any education is not complete without taking cognisance of what is the need of the hour. Designed to complement the academic curriculum, beyond classroom widens horizons, maximises learner’s participation and potential, thus leading to increased learning and enhanced cognitive development. Recognising the need for this, the following domains provide that and more: social opportunities and opening a child’s mind to new interests.`,
     highlights: [
-  { label: "Meraki (Creative Expressions)", icon: icon1 },
-  { label: "Eat Your School Gardens", icon: icon2 },
-  { label: "Responsible Citizenship Programme", icon: icon3 },
-  { label: "Publishing", icon: icon4 },
-],
+      "Meraki (Creative Expressions)",
+      "Eat Your School Garden",
+      "Responsible Citizenship Programme",
+      "Publishing",
+    ],
+    details: {
+        "Meraki (Creative Expressions)":`The Meraki (Creative Expressions) program helps students to explore creation and expression through Art, Music, Movement and Photography. The department nurtures an inclusive environment for students, allowing for a fluid engagement with the art forms from Grade 3 onwards. Through an immersive experience in art making, creative process and reflections, Meraki aims to go beyond the product, to promote artistic process. We strongly believe that it is the process of art-making that gives a child the creative confidence, not merely the final product. Folk toy making and play, junk instruments and music making, puppetry and theatre- are some of the projects planned for junior school.
+The department also stands apart in its consistent efforts to integrate visual arts with other art forms and disciplines—the environment, culture, mental health, and the body.
+
+For the senior school, Meraki is offered for the students of the NIOS stream. The 11th and 12th Grade students may opt to take up an area in greater depth to create a body of work or a portfolio in art, music or photography. While this course is geared to nurture creation and free expression, some students have gone on to pursue art and music on recognising their core abilities. 
+
+Alumni of the program now find themselves in institutions such as Srishti School of Design and KM College of Music and Technology.
+
+Award winning projects
+https://artroomhero.com/amruthaanand/`,
+      "Eat Your School Garden": `This movement began in 2017 with students creating an edible garden. By using regenerative agriculture, the garden fosters biodiversity and sustainable learning. From Miyawaki forests to sky gardens, students experience hands-on education for sustainability.
+
+Follow us:
+• Facebook: https://www.facebook.com/eatyourschoolgarden
+• Instagram: https://www.instagram.com/eatyourschoolgarden/
+• Blog: https://medium.com/eat-your-school-garden`,
+      "Responsible Citizenship Programme": `A program to foster sustainability, civic responsibility, and awareness. Students lead initiatives on water conservation, food waste reduction, and support the UN’s SDGs with campaigns and awareness sessions.`,
+      Publishing: `SnapShot, APL’s e-magazine, showcases student voices and talents. Students write, proof, design, and illustrate, merging real-world print media skills with academics.`,
+    },
     images: [
       { big: bigImg1, small: smallImg1 },
       { big: bigImg2, small: smallImg2 },

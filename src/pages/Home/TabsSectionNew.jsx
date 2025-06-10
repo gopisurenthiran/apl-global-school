@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import bigImg1 from "@/assets/tab-1.png";
+import smallImg1 from "@/assets/tab-2.png";
+import bigImg2 from "@/assets/tab-2.png";
+import smallImg2 from "@/assets/tab-1.png";
 import bgGrid from "@/assets/grid-1.png";
-import { tabs, tabContent } from "@/data/Home_Data";
-import { useNavigate } from "react-router-dom";
+import { tabs, tabContent } from "@/data/Home_Data1";
 
-
-export default function TabsSection() {
+export default function TabsSectionNew() {
   const [activeTab, setActiveTab] = useState("Meraki");
   const [imageIndex, setImageIndex] = useState(0);
   const [expandedHighlight, setExpandedHighlight] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -104,7 +105,7 @@ export default function TabsSection() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
-              className="space-y-6 overflow-y-auto max-h-[600px] pr-1 md:pr-1 scrollbar-thin scrollbar-thumb-primary"
+              className="space-y-6 overflow-y-auto max-h-[600px] pr-2 md:pr-4 scrollbar-thin scrollbar-thumb-primary"
             >
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary">
                 {tabContent[activeTab].heading}
@@ -115,38 +116,45 @@ export default function TabsSection() {
               </p>
 
               {/* Accordion */}
-              {/* Highlights with Icons */}
-{tabContent[activeTab].highlights?.length > 0 && (
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-    {tabContent[activeTab].highlights.map((item, idx) => (
-      <div
-        key={idx}
-        className="flex items-center gap-4 p-3 border border-primary rounded-lg bg-white shadow-sm hover:shadow-md transition"
-      >
-        <img
-          src={item.icon}
-          alt={item.label}
-          className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
-        />
-        <span className="text-primary font-medium text-sm sm:text-base">
-          {item.label}
-        </span>
-      </div>
-    ))}
-  </div>
-)}
+              {tabContent[activeTab].highlights?.length > 0 && (
+                <div className="space-y-3">
+                  {tabContent[activeTab].highlights.map((item, idx) => {
+                    const isOpen = expandedHighlight === item;
+                    return (
+                      <div
+                        key={idx}
+                        className="border border-gray-300 rounded-lg"
+                      >
+                        <button
+                          onClick={() =>
+                            setExpandedHighlight(isOpen ? null : item)
+                          }
+                          className="w-full flex items-center justify-between px-4 py-2 text-left text-primary font-semibold hover:bg-purple-50"
+                        >
+                          {item}
+                          <span className="text-xl font-bold">
+                            {isOpen ? "−" : "+"}
+                          </span>
+                        </button>
 
-{/* Learn More Button */}
-<div className="mt-8">
-  <button
-    onClick={() => navigate(`/${activeTab.toLowerCase()}`)}
-    className="px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition"
-  >
-    Learn More
-  </button>
-</div>
-
-
+                        <AnimatePresence>
+                          {isOpen && (
+                            <motion.div
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{ opacity: 1, height: "auto" }}
+                              exit={{ opacity: 0, height: 0 }}
+                              transition={{ duration: 0.3 }}
+                              className="px-4 pb-3 text-gray-700 whitespace-pre-line text-sm sm:text-base"
+                            >
+                              {tabContent[activeTab].details?.[item]}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </motion.div>
           </AnimatePresence>
         </div>
