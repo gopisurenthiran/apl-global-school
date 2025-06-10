@@ -35,7 +35,7 @@ export default function GallerySection() {
       <div className="flex flex-col-reverse lg:flex-row items-start gap-10">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 space-y-6">
-          <h3 className="text-xl sm:text-2xl font-bold text-black font-primary">
+          <h3 className="text-xl sm:text-2xl font-bold text-primary font-primary">
             SPORTS DAY
           </h3>
           <p className="text-gray-700 text-sm sm:text-base font-secondary">
