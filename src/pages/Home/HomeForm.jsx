@@ -46,7 +46,7 @@ export default function EnquiryForm() {
           </div>
           <div className="grid grid-cols-2 gap-3">
             <select className="bg-[#6f3d86] text-white p-2 rounded border-none font-secondary  w-full focus:outline-none">
-              <option>Preffered Location</option>
+              <option>Preferred Location</option>
             </select>
             <button
               type="submit"

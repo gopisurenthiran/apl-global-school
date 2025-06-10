@@ -27,7 +27,7 @@ const EnquiryForm = () => {
           <option>Female</option>
         </select>
         <select className="input">
-          <option>Preffered Location</option>
+          <option>Preferred Location</option>
           <option>Location 1</option>
           <option>Location 2</option>
         </select>

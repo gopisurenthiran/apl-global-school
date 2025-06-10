@@ -24,7 +24,7 @@ export default function GallerySection() {
   }, []);
 
   return (
-    <section className="container mx-auto w-full bg-white py-12 px-4 md:px-10 lg:px-20 overflow-hidden">
+    <section className="container mx-auto w-full bg-white py-20 top-10 px-4 md:px-10 lg:px-20 overflow-hidden">
       <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-third mb-2 font-primary">
         Gallery
       </h2>
@@ -34,7 +34,7 @@ export default function GallerySection() {
 
       <div className="flex flex-col-reverse lg:flex-row items-start gap-10">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 space-y-5">
+        <div className="w-full lg:w-1/2 space-y-6">
           <h3 className="text-xl sm:text-2xl font-bold text-black font-primary">
             SPORTS DAY
           </h3>

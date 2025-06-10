@@ -4,7 +4,6 @@ import bgGrid from "@/assets/grid-1.png";
 import { tabs, tabContent } from "@/data/Home_Data";
 import { useNavigate } from "react-router-dom";
 
-
 export default function TabsSection() {
   const [activeTab, setActiveTab] = useState("Meraki");
   const [imageIndex, setImageIndex] = useState(0);
@@ -43,8 +42,8 @@ export default function TabsSection() {
             className={`w-full sm:w-40 md:w-48 px-4 py-4 text-base sm:text-lg md:text-xl font-semibold border-2 rounded-lg transition-all duration-300 ease-in-out text-center
               ${
                 activeTab === tab
-                  ? "bg-primary text-secondary"
-                  : "border-primary text-primary hover:bg-primary hover:text-white"
+                  ? "bg-primary font-primary uppercase text-secondary"
+                  : "border-primary text-primary uppercase hover:bg-primary hover:text-white"
               }`}
           >
             {tab}
@@ -57,10 +56,10 @@ export default function TabsSection() {
         {/* Left Column */}
         <div className="lg:w-1/2 flex flex-col items-start gap-6 lg:sticky lg:top-32 h-fit">
           <div className="space-y-2 px-2">
-            <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold text-primary">
+            <h3 className="text-xl sm:text-2xl md:text-4xl font-primary font-semibold text-primary">
               {tabContent[activeTab].title}
             </h3>
-            <p className="text-base sm:text-lg md:text-2xl text-primary whitespace-pre-line">
+            <p className="text-base sm:text-lg md:text-2xl font-secondary text-primary whitespace-pre-line">
               {tabContent[activeTab].sub}
             </p>
           </div>
@@ -106,47 +105,45 @@ export default function TabsSection() {
               transition={{ duration: 0.5 }}
               className="space-y-6 overflow-y-auto max-h-[600px] pr-1 md:pr-1 scrollbar-thin scrollbar-thumb-primary"
             >
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-primary font-bold text-primary">
                 {tabContent[activeTab].heading}
               </h2>
 
-              <p className="text-gray-800 whitespace-pre-line text-sm sm:text-sm md:text-base">
+              <p className="text-gray-800 whitespace-pre-line font-secondary text-sm sm:text-sm md:text-base">
                 {tabContent[activeTab].description}
               </p>
 
               {/* Accordion */}
               {/* Highlights with Icons */}
-{tabContent[activeTab].highlights?.length > 0 && (
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-    {tabContent[activeTab].highlights.map((item, idx) => (
-      <div
-        key={idx}
-        className="flex items-center gap-4 p-3 border border-primary rounded-lg bg-white shadow-sm hover:shadow-md transition"
-      >
-        <img
-          src={item.icon}
-          alt={item.label}
-          className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
-        />
-        <span className="text-primary font-medium text-sm sm:text-base">
-          {item.label}
-        </span>
-      </div>
-    ))}
-  </div>
-)}
+              {tabContent[activeTab].highlights?.length > 0 && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                  {tabContent[activeTab].highlights.map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-center gap-4 p-3 border border-primary rounded-lg bg-white shadow-sm hover:shadow-md transition"
+                    >
+                      <img
+                        src={item.icon}
+                        alt={item.label}
+                        className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                      />
+                      <span className="text-primary  font-secondary font-bold text-sm sm:text-base">
+                        {item.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
 
-{/* Learn More Button */}
-<div className="mt-8">
-  <button
-    onClick={() => navigate(`/${activeTab.toLowerCase()}`)}
-    className="px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition"
-  >
-    Learn More
-  </button>
-</div>
-
-
+              {/* Learn More Button */}
+              <div className="mt-8">
+                <button
+                  onClick={() => navigate(`/${activeTab.toLowerCase()}`)}
+                  className="px-6 py-2 bg-primary font-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition"
+                >
+                  Learn More
+                </button>
+              </div>
             </motion.div>
           </AnimatePresence>
         </div>

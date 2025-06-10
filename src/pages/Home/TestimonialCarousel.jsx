@@ -81,9 +81,9 @@ export default function TestimonialCarousel() {
         backgroundPosition: "",
       }}
     >
-      <div className="text-center mt-10 mb-10">
+      <div className="text-center mt-20 mb-20">
         <h2 className="text-5xl text-primary font-semibold font-primary mb-2">Testimonials</h2>
-        <p className="text-primary font-primary text-3xl mt-1">
+        <p className="text-primary font-primary text-3xl mt-3">
           Voices that inspire our journey
         </p>
       </div>
@@ -121,7 +121,7 @@ export default function TestimonialCarousel() {
             opacity = 1;
             zIndex = 50;
             color = "text-white";
-            bg = "bg-lime-400";
+            bg = "bg-secondary";
             shadow = "shadow-2xl";
           } else if (pos === 1 || pos === testimonials.length - 1) {
             translateX = pos === 1 ? 160 : -160;
