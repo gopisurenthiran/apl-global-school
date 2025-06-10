@@ -65,13 +65,13 @@ export default function TabsSection() {
           </div>
 
           {/* Image Animation */}
-          <div className="relative max-w-full w-full mt-20 sm:max-w-[320px] md:max-w-[380px] h-[300px] sm:h-[360px] md:h-[400px]">
+          <div className="mt-10 flex items-center justify-center gap-6 sm:gap-10 md:gap-14">
             <AnimatePresence mode="wait">
               <motion.img
                 key={`big-${imageIndex}`}
                 src={big}
                 alt="Big"
-                className="absolute top-0 left-0 w-2/3 sm:w-[240px] md:w-[300px] z-20"
+                className="w-2/3 sm:w-[240px] md:w-[340px]"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.05 }}
@@ -84,7 +84,7 @@ export default function TabsSection() {
                 key={`small-${imageIndex}`}
                 src={small}
                 alt="Small"
-                className="absolute top-28 left-20 sm:left-52 md:left-72 w-1/3 sm:w-[160px] md:w-[200px] z-10"
+                className="w-1/3 sm:w-[160px] md:w-[200px]"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
@@ -127,7 +127,7 @@ export default function TabsSection() {
                         alt={item.label}
                         className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
                       />
-                      <span className="text-primary  font-secondary font-bold text-sm sm:text-base">
+                      <span className="text-primary  font-secondary font-bold text-sm sm:text-sm">
                         {item.label}
                       </span>
                     </div>
