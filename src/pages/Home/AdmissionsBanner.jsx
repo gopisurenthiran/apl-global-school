@@ -1,4 +1,4 @@
-import Banner from '@/assets/AdmissionBanner.svg';
+import Banner from '@/assets/AdmissionBanner.png';
 
 export default function AdmissionsBanner() {
   return (
