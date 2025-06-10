@@ -8,7 +8,7 @@ import footerFream from "../assets/bg-footer.svg"; // replace with your footer f
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-white to-gray-100 text-primary pt-6">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between px-10">
+      <div className="container mx-auto  flex flex-col md:flex-row items-center justify-between px-10">
         {/* Left - Logo */}
         <div className="mb-4 md:mb-0">
           <img src={logo} alt="APL Logo" className="h-12 md:h-16" />
@@ -16,7 +16,7 @@ const Footer = () => {
 
         {/* Center - Links + Social */}
         <div className="text-center">
-          <ul className="flex flex-wrap justify-center gap-6 mb-4 font-secondary font-medium font-semibold text-sm md:text-base">
+          <ul className="flex flex-wrap justify-center gap-6 mb-4 font-secondary font-semibold text-sm md:text-base">
             <li>
               <a href="#about" className="hover:text-secondary">
                 About APL
