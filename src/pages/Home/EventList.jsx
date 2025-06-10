@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CalendarDays, Clock } from 'lucide-react';
-import EventImage from '../assets/Img-3.jpg';
+import EventImage from '@/assets/Img-3.jpg';
 
 const Events = [
   {

@@ -1,42 +1,31 @@
-import { useState } from 'react'
-import Header  from './components/Header' 
-import Tab from './pages/Tab'
-import CreativeTabs from './pages/TabSection'
-import Footer from './components/Footer'
-import './App.css'
-import AdmissionsBanner from './pages/AdmissionsBanner'
-import GallerySection from './pages/GallerySection'
-import CambridgeDiplomaSection from './pages/CambridgeDiplomaSection'
-import ContentBanner from './pages/ContentBanner'
-import UpcommingEvents from './pages/UpcomingEvent'
-import EventList from './pages/EventList'
-import TestimonialSlider from './pages/TestimonialSlider'
-import CardSlider from './pages/CardSlider'
-import ContactUs from './pages/ContactUs'
-import BannerSection from './pages/BannerSection'
+import { useState } from "react";
 
+import AdmissionsBanner from "./Home/AdmissionsBanner";
+import GallerySection from "./Home/GallerySection";
+import CambridgeDiplomaSection from "./Home/CambridgeDiplomaSection";
+import ContentBanner from "./Home/ContentBanner";
+import UpcommingEvents from "./Home/UpcomingEvent";
+import EventList from "./Home/EventList";
+import BannerSection from "./Home/BannerSection";
+import TestimonialCarousel from "./Home/TestimonialCarousel";
+import ContactUs from "./Home/Contact";
+import TabsSection from "./Home/TabsSection";
 
-
-function App() {
-  
-
+function HomePages() {
   return (
     <>
-      <Header/>
-      <BannerSection/>
-      <Tab/>
+      <BannerSection />
+      <TabsSection />
       <AdmissionsBanner />
       <GallerySection />
       <CambridgeDiplomaSection />
       <ContentBanner />
       <UpcommingEvents />
       <EventList />
-      <TestimonialSlider />
+      <TestimonialCarousel />
       <ContactUs />
-      <Footer/>
-  
     </>
-  )
+  );
 }
 
-export default App
+export default HomePages;

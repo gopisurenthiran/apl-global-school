@@ -1,6 +1,6 @@
-import Fream from '../assets/Section.jpg';
+import Fream from '@/assets/Section.jpg';
 
-import RightBanner from '../assets/mobile.jpg';
+import RightBanner from '@/assets/mobile.jpg';
 
 export default function ContentBanner() {
   return (

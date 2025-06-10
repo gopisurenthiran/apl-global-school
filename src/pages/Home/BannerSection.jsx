@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import bannerImg from '../assets/Banner.png';
-import mobile from '../assets/mobileBanner.png';
+import bannerImg from '@/assets/Banner.png';
+import mobile from '@/assets/mobileBanner.png';
 import EnquiryForm from './HomeForm';
 import SocialIcon from './SocialIcons';
 import 'flowbite';

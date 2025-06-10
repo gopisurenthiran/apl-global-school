@@ -1,4 +1,4 @@
-import EventBanner from '../assets/EventBanner.svg';
+import EventBanner from '@/assets/EventBanner.svg';
 
 export default function UpcommingEvents() {
   return (

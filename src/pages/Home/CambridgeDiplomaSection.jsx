@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { PlayCircle } from "lucide-react";
-import Banner from "../assets/VideoBanner.png";
-import Video from "../assets/ad-vk.mp4";
+import Banner from "@/assets/VideoBanner.png";
+import Video from "@/assets/ad-vk.mp4";
 
 export default function CambridgeDiplomaSection() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -43,19 +43,20 @@ export default function CambridgeDiplomaSection() {
 
   return (
     <section className="py-12 px-4 sm:px-6 md:px-10 lg:px-16 bg-white overflow-hidden">
-      <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold font-primary text-third mb-8 sm:mb-10 overflow-hidden leading-tight">
-        Centre for Cambridge International Diploma <br className="hidden sm:block" /> in Teaching and
-        Learning
+      <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold font-primary text-third mb-10 leading-tight">
+        Centre for Cambridge International Diploma{" "}
+        <br className="hidden sm:block" />
+        in Teaching and Learning
       </h2>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
-        {/* Left: Image/Video */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-stretch">
+        {/* Left: Video Block */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg"
+          className="relative w-full h-full min-h-[400px] md:min-h-[500px] lg:min-h-[520px] rounded-xl overflow-hidden shadow-lg flex items-center justify-center"
         >
           {!isPlaying && (
             <img
@@ -89,17 +90,20 @@ export default function CambridgeDiplomaSection() {
           )}
         </motion.div>
 
-        {/* Right: Text & Accordion */}
+        {/* Right: Text + Accordion */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
+          className="flex flex-col justify-center h-full min-h-[400px] md:min-h-[500px] lg:min-h-[520px]"
         >
           <p className="text-sm sm:text-base md:text-[16px] font-secondary mb-2">
-            <span className="font-bold">APL Global is an accredited centre for the Cambridge
-            International Diploma in Teaching and Learning (CIDTL), a professional development
-            qualification offered by Cambridge Assessment International Education.</span>
+            <span className="font-bold">
+              APL Global is an accredited centre for the Cambridge International Diploma in Teaching
+              and Learning (CIDTL), a professional development qualification offered by Cambridge
+              Assessment International Education.
+            </span>
           </p>
 
           <p className="text-third font-semibold mt-4 mb-2 sm:text-base">
