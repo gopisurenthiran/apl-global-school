@@ -56,9 +56,10 @@ export default function TabsSection() {
         {/* Left Column */}
         <div className="lg:w-1/2 flex flex-col items-start gap-6 lg:sticky lg:top-32 h-fit">
           <div className="space-y-2 px-2">
-            <h3 className="text-xl sm:text-2xl md:text-4xl font-primary font-semibold text-primary">
+            <h3 className="inline-block text-xl sm:text-2xl md:text-4xl font-primary font-semibold border-b-2 border-secondary text-primary">
               {tabContent[activeTab].title}
             </h3>
+
             <p className="text-base sm:text-lg md:text-2xl font-secondary text-primary whitespace-pre-line">
               {tabContent[activeTab].sub}
             </p>
@@ -105,7 +106,7 @@ export default function TabsSection() {
               transition={{ duration: 0.5 }}
               className="space-y-6 overflow-y-auto max-h-[600px] pr-1 md:pr-1 scrollbar-thin scrollbar-thumb-primary"
             >
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-primary font-bold text-primary">
+              <h2 className=" text-xl sm:text-2xl md:text-3xl font-primary inline-block border-b-2 border-secondary font-bold text-primary">
                 {tabContent[activeTab].heading}
               </h2>
 

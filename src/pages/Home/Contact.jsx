@@ -4,7 +4,10 @@ import girl from "@/assets/school-girl.svg"; // update path if needed
 export default function ContactUs() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white py-10">
-      <h2 className="text-xl text-third font-semibold font-primary mb-6">Contact us</h2>
+      
+      <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-third mb-2 p-6 font-primary">
+        Contact us
+      </h2>
       
       <div className="relative bg-third rounded-xl w-full max-w-5xl p-10 shadow-xl overflow-hidden">
         {/* Text & Form */}

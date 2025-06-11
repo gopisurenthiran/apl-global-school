@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Plus, Minus } from "lucide-react";
 import Img1 from "@/assets/Img-1.jpg";
 import Img2 from "@/assets/Img-2.jpg";
 import Img3 from "@/assets/Img-3.jpg";
@@ -35,7 +36,7 @@ export default function GallerySection() {
       <div className="flex flex-col-reverse lg:flex-row items-start gap-10">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 space-y-6">
-          <h3 className="text-xl sm:text-2xl font-bold text-primary font-primary">
+          <h3 className="text-xl sm:text-2xl font-bold text-primary inline-block border-b-2 border-secondary font-primary">
             SPORTS DAY
           </h3>
           <p className="text-gray-700 text-sm sm:text-base font-secondary">
@@ -61,13 +62,17 @@ export default function GallerySection() {
                   onClick={() => toggleAccordion(index)}
                 >
                   <span
-                    className={`text-sm font-bold w-6 h-6 flex items-center justify-center border border-secondary rounded-full transition ${
+                    className={`text-sm font-bold w-4 h-4 flex items-center justify-center border border-secondary rounded-full transition ${
                       openIndex === index
                         ? "bg-secondary text-white"
                         : "bg-white text-secondary"
                     }`}
                   >
-                    {openIndex === index ? "−" : "+"}
+                    {openIndex === index ? (
+                      <Minus className="w-5 h-5" strokeWidth={3} />
+                    ) : (
+                      <Plus className="w-5 h-5 " strokeWidth={3} />
+                    )}
                   </span>
                   <span>{item.title}</span>
                 </button>
