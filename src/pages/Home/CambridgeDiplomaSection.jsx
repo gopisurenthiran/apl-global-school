@@ -6,7 +6,6 @@ import Banner from "@/assets/VideoBanner.png";
 import Video from "@/assets/ad-vk.mp4";
 import { FaPlay } from "react-icons/fa";
 
-
 export default function CambridgeDiplomaSection() {
   const [openIndex, setOpenIndex] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -101,6 +100,7 @@ export default function CambridgeDiplomaSection() {
           transition={{ duration: 1 }}
           className="flex flex-col justify-center h-full min-h-[400px] md:min-h-[500px] lg:min-h-[520px]"
         >
+          {/* Introduction Paragraph */}
           <p className="text-sm sm:text-base md:text-[16px] font-secondary mb-2">
             <span className="font-bold">
               APL Global is an accredited centre for the Cambridge International
@@ -110,20 +110,24 @@ export default function CambridgeDiplomaSection() {
             </span>
           </p>
 
+          {/* Tagline */}
           <p className="text-third font-semibold font-secondary mt-4 mb-2 sm:text-base">
             Stories Told Through Every Frame
           </p>
 
-          <h3 className="text-lg sm:text-xl md:text-2xl font-primary inline-block border-b-2 border-secondary font-semibold text-third mb-4">
+          {/* Heading with bottom border */}
+          <h2 className="inline-block text-lg sm:text-xl md:text-2xl font-primary font-semibold text-third border-b-2 border-secondary mb-4">
             THINKERS VOICE OF YOUNG THINKERS
-          </h3>
+          </h2>
 
+          {/* Description */}
           <p className="text-sm sm:text-base text-gray-700 font-secondary mb-6">
             Experience the spirit of APL Global School through our video
             gallery. From classroom activities to special events, these moments
             showcase our students' creativity, learning, and growth in action.
           </p>
 
+          {/* Accordion List */}
           <ul className="text-sm sm:text-base text-gray-800 space-y-4">
             {highlights.map((item, index) => (
               <li key={index}>
@@ -132,25 +136,22 @@ export default function CambridgeDiplomaSection() {
                   onClick={() => toggleAccordion(index)}
                 >
                   <span
-                    className={`text-sm font-bold w-4 h-4 flex items-center justify-center border border-secondary text-secondary rounded-full transition duration-200 ${
+                    className={`w-6 h-6 flex items-center justify-center border border-secondary rounded-full transition duration-200 ${
                       openIndex === index
                         ? "bg-secondary text-white"
-                        : "bg-white"
+                        : "bg-white text-secondary"
                     }`}
                   >
-                    {/* {openIndex === index ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />} */}
                     {openIndex === index ? (
-                      <Minus className="w-5 h-5" strokeWidth={3} />
+                      <Minus className="w-4 h-4 font-bold" strokeWidth={3} />
                     ) : (
-                      <Plus className="w-5 h-5 " strokeWidth={3} />
+                      <Plus className="w-4 h-4 font-bold" strokeWidth={3} />
                     )}
                   </span>
-                  <span className="font-primary ">
-                    {item.title}
-                  </span>
+                  <span className="font-primary">{item.title}</span>
                 </button>
                 {openIndex === index && (
-                  <p className="mt-2 text-gray-600 text-sm sm:text-base font-secondary pl-6 border-l-4 border-secondary transition-all duration-300 ease-in-out">
+                  <p className="mt-2 text-gray-600 text-sm sm:text-base font-secondary pl-6  transition-all duration-300 ease-in-out">
                     {item.content}
                   </p>
                 )}

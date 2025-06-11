@@ -77,7 +77,7 @@ export default function GallerySection() {
                   <span>{item.title}</span>
                 </button>
                 {openIndex === index && (
-                  <p className="mt-2 text-gray-600 text-sm sm:text-base font-secondary pl-4 border-l-4 border-secondary">
+                  <p className="mt-2 text-gray-600 text-sm sm:text-base font-secondary pl-4 ">
                     {item.content}
                   </p>
                 )}
