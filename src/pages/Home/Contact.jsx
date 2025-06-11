@@ -58,7 +58,7 @@ export default function ContactUs() {
                 className="p-2 rounded-md bg-primary/90 text-sm col-span-2 placeholder-white"
               ></textarea>
               <div>
-            <button className="bg-lime-400  text-white text-sm font-semibold px-4 py-2 rounded hover:bg-lime-500 ">
+            <button className="bg-secondary  text-white text-sm font-semibold px-4 py-2 rounded hover:bg-lime-500 ">
                 Submit
               </button>
               </div>

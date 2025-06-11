@@ -96,7 +96,7 @@ export default function TabsSection() {
           </div>
 
           {/* Right Column */}
-          <div className="w-full h-full lg:w-1/2">
+          <div className="w-full h-full mb-10 lg:w-1/2">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
