@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import profile from "@/assets/100.jpg";
-import paper from "@/assets/section-2-banner.png";
+import paper from "@/assets/bg-graph.png";
 
 const testimonials = [
   {

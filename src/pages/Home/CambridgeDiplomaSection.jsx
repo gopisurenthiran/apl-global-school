@@ -85,7 +85,7 @@ export default function CambridgeDiplomaSection() {
             <div className="absolute inset-0 flex items-center justify-center">
               <button
                 onClick={handlePlay}
-                className="bg-white/80 hover:bg-white rounded-full p-6 transition"
+                className="bg-white hover:bg-white border-4 border-secondary rounded-full p-4 transition"
               >
                 <FaPlay className="text-primary w-8 h-8" />
               </button>
