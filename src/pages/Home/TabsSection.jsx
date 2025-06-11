@@ -31,7 +31,7 @@ export default function TabsSection() {
         }}
       >
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center w-full gap-4 p-10 sm:gap-6">
+        <div className="flex flex-wrap justify-center w-full gap-6 p-10 sm:gap-20">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -52,7 +52,7 @@ export default function TabsSection() {
         </div>
 
         {/* Main Layout */}
-        <div className="flex flex-col lg:flex-row mb-20 gap-6 items-start">
+        <div className="flex flex-col lg:flex-row mb-20 gap-6 p-10 items-start">
           {/* Left Column */}
           <div className="lg:w-1/2 flex flex-col items-start gap-6 lg:sticky lg:top-32 h-fit">
             <div className="space-y-2 px-2">

@@ -62,16 +62,16 @@ export default function GallerySection() {
                   onClick={() => toggleAccordion(index)}
                 >
                   <span
-                    className={`text-sm font-bold w-4 h-4 flex items-center justify-center border border-secondary rounded-full transition ${
+                    className={`text-sm font-bold w-5 h-5 flex items-center justify-center border-2 border-secondary rounded-full transition ${
                       openIndex === index
                         ? "bg-secondary text-white"
                         : "bg-white text-secondary"
                     }`}
                   >
                     {openIndex === index ? (
-                      <Minus className="w-5 h-5" strokeWidth={3} />
+                      <Minus className="w-6 h-6" strokeWidth={3} />
                     ) : (
-                      <Plus className="w-5 h-5 " strokeWidth={3} />
+                      <Plus className="w-6 h-6 " strokeWidth={3} />
                     )}
                   </span>
                   <span>{item.title}</span>

@@ -136,16 +136,16 @@ export default function CambridgeDiplomaSection() {
                   onClick={() => toggleAccordion(index)}
                 >
                   <span
-                    className={`w-6 h-6 flex items-center justify-center border border-secondary rounded-full transition duration-200 ${
+                    className={`w-5 h-5 flex items-center justify-center border-2 border-secondary rounded-full transition duration-200 ${
                       openIndex === index
                         ? "bg-secondary text-white"
                         : "bg-white text-secondary"
                     }`}
                   >
                     {openIndex === index ? (
-                      <Minus className="w-4 h-4 font-bold" strokeWidth={3} />
+                      <Minus className="w-6 h-6 font-bold" strokeWidth={3} />
                     ) : (
-                      <Plus className="w-4 h-4 font-bold" strokeWidth={3} />
+                      <Plus className="w-6 h-6 font-bold" strokeWidth={3} />
                     )}
                   </span>
                   <span className="font-primary">{item.title}</span>
