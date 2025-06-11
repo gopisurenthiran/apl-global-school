@@ -13,10 +13,10 @@
 }
 @font-face {
   font-family: 'Agatho';
-  src: url('/src/assets/fonts/Agatho.woff2') format('woff2');
+  src: url('/src/assets/fonts/Agatho_Bold.otf') format('truetype');
 }
 @font-face {
   font-family: 'Gill Sans';
-  src: url('/src/assets/fonts/GillSans.woff2') format('woff2');
+  src: url('/src/assets/fonts/Gill\ Sans.otf') format('truetype');
 }
 
