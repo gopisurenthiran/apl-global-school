@@ -1,10 +1,11 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import chatIcon from "@/assets/chat-icon.png";
 
 export default function SocialIcon() {
   return (
     <>
       {/* Desktop: absolute positioned */}
-      <div className="hidden md:flex absolute bottom-6 left-6 items-center gap-6 z-10">
+      <div className="hidden md:flex absolute bottom-6 left-2 items-center gap-6 z-10">
         {/* Social Icons */}
         <div className="bg-white flex space-x-3 rounded p-2 shadow-md">
           <a
@@ -28,9 +29,12 @@ export default function SocialIcon() {
         </div>
 
         {/* Button */}
-        <button className="text-white font-semibold px-4 py-2 rounded-lg bg-gradient-to-r from-purple-700 to-pink-500 shadow hover:opacity-90">
-          Admissions Enquiry
-        </button>
+        <div className="flex items-center">
+          <img src={chatIcon} alt="" className="h-10 w-10 object-contain" />
+          <button className="h-10 text-white font-semibold px-4 rounded-lg bg-gradient-to-r from-purple-700 to-pink-500 shadow hover:opacity-90">
+            Admissions Enquiry
+          </button>
+        </div>
       </div>
 
       {/* Mobile layout */}
@@ -59,9 +63,12 @@ export default function SocialIcon() {
         </div>
 
         <div className="mt-4 flex justify-center">
-          <button className="text-white font-semibold px-4 py-2 rounded-lg bg-gradient-to-r from-purple-700 to-pink-500 shadow hover:opacity-90">
+          <div className="flex items-center">
+          <img src={chatIcon} alt="" className="h-10 w-10 object-contain" />
+          <button className="h-10 text-white font-semibold px-4 rounded-lg bg-gradient-to-r from-purple-700 to-pink-500 shadow hover:opacity-90">
             Admissions Enquiry
           </button>
+        </div>
         </div>
       </div>
     </>
