@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import profile from "@/assets/100.jpg";
+import profile1 from "@/assets/t-1.png";
+import profile2 from "@/assets/t-2.png";
+import profile3 from "@/assets/t-3.png";
 import paper from "@/assets/bg-graph.png";
 
 const testimonials = [
@@ -10,31 +12,31 @@ const testimonials = [
     role: "2022 Batch",
     content:
       "APL had enabled me to take the subjects of my preference and pursue my interests. For instance, I was able to take up German and Classical studies, though it was not a part of the subjects offered. I was provided the platform to do more than I could have had at another school.",
-    avatar: profile,
+    avatar: profile1,
   },
   {
     name: "Anita Roy",
     role: "2021 Batch",
     content: "Ad Club was where I found my passion and voice. APL had enabled me to take the subjects of my preference and pursue my interests. For instance, I was able to take up German and Classical studies, though it was not a part of the subjects offered. I was provided the platform to do more than I could have had at another school.",
-    avatar: profile,
+    avatar: profile2,
   },
   {
     name: "Ravi Kumar",
     role: "2023 Batch",
     content: "Inspiring experience! Events shaped my career path. APL had enabled me to take the subjects of my preference and pursue my interests. For instance, I was able to take up German and Classical studies, though it was not a part of the subjects offered. I was provided the platform to do more than I could have had at another school.",
-    avatar: profile,
+    avatar: profile1,
   },
   {
     name: "Divya Mehta",
     role: "2020 Batch",
     content: "Wonderful memories and great personal growth. APL had enabled me to take the subjects of my preference and pursue my interests. For instance, I was able to take up German and Classical studies, though it was not a part of the subjects offered. I was provided the platform to do more than I could have had at another school.",
-    avatar: profile,
+    avatar: profile2,
   },
   {
     name: "Sanjay Singh",
     role: "2019 Batch",
     content: "The club pushes you to dream big. Loved it. APL had enabled me to take the subjects of my preference and pursue my interests. For instance, I was able to take up German and Classical studies, though it was not a part of the subjects offered. I was provided the platform to do more than I could have had at another school.",
-    avatar: profile,
+    avatar: profile1,
   },
 ];
 
@@ -112,7 +114,7 @@ export default function TestimonialCarousel() {
           let scale = 0.85;
           let opacity = 0.4;
           let zIndex = 10;
-          let color = "text-gray-400";
+          let color = "text-black";
           let bg = "bg-white";
           let shadow = "shadow";
 
@@ -147,25 +149,25 @@ export default function TestimonialCarousel() {
                 <img
                   src={t.avatar}
                   alt={t.name}
-                  className="w-12 h-12 rounded-full border-2 border-white shadow-md"
+                  className="w-13 h-13 rounded-full border-2 border-white shadow-md"
                 />
               </div>
               <div className="flex justify-center mt-5">
                 {Array.from({ length: 5 }).map((_, idx) => (
                   <Star
                     key={idx}
-                    className={`w-4 h-4 ${
-                      isActive ? "text-white" : "text-white"
+                    className={`w-5 h-5 ml-2 ${
+                      isActive ? "text-white" : "text-gray-400"
                     }`}
                     fill="currentColor"
                   />
                 ))}
               </div>
-              <p className={`text-sm mt-4 ${color} font-primary text-center`}>{t.content}</p>
-              <h4 className={`font-semibold mt-3 font-primary text-left ${color}`}>
+              <p className={`text-sm mt-4 ${color} font-secondary text-left p-2`}>{t.content}</p>
+              <h4 className={`font-semibold mt-7 font-secondary text-left ${color}`}>
                 {t.name}
               </h4>
-              <p className={`text-xs ${color} font-primary text-left `}>{t.role}</p>
+              <p className={`text-xs ${color} font-secondary text-left `}>{t.role}</p>
             </motion.div>
           );
         })}

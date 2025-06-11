@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import bgGrid from "@/assets/bg-graph.png";
+import bgGrid from "@/assets/home-graph.png";
 import { tabs, tabContent } from "@/data/Home_Data";
 import { useNavigate } from "react-router-dom";
 
