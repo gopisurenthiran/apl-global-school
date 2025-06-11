@@ -90,7 +90,7 @@ export const tabContent = {
       { label: "Public Speaking Club", icon: Ex_8 },
       { label: "MUN Club", icon: Ex_9 },
       { label: "Creative Expressions Club", icon: Ex_10 },
-      { label: "Music Club", icon: Ex_10 },
+      { label: "Music Club", icon: Ex_11 },
     ],
     images: [{ big: bigImg1, small: smallImg1 }],
   },
