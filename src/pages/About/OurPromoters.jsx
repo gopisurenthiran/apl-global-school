@@ -4,7 +4,7 @@ import AboutBanner_1 from "@/assets/AboutBanner-1.png";
 import AboutBanner_2 from "@/assets/AboutBanner-2.png";
 import AboutGraph from "@/assets/about-graph.svg";
 import Ramaniyam from "@/assets/Ramaniyan-bg.png";
-import TestimonialCarousel from "./Home/TestimonialCarousel";
+import TestimonialCarousel from "@/pages/Home/TestimonialCarousel";
 
 const images = [AboutBanner_1, AboutBanner_2, AboutBanner_1];
 

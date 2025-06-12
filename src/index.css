@@ -20,3 +20,14 @@
   src: url('/src/assets/fonts/Gill_Sans.otf') format('truetype');
 }
 
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+.group:hover .icon-chevron {
+  transform: rotate(180deg);
+}
+

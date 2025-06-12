@@ -4,7 +4,7 @@ import AboutBanner_1 from "@/assets/AboutBanner-1.png";
 import AboutBanner_2 from "@/assets/AboutBanner-2.png";
 import ArrowPuple from "@/assets/arrow-purple.png";
 import ArrowLime from "@/assets/arrow-lime.png";
-import TestimonialCarousel from "./Home/TestimonialCarousel";
+import TestimonialCarousel from "@/pages/Home/TestimonialCarousel";
 
 const items = [
   {

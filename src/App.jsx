@@ -3,14 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import HomePage from "./pages/HomePage";
 import TabsSectionNew from "./pages/Home/TabsSectionNew";
-import AboutPages from "./pages/AboutPage";
-import OurEducational from "./pages/OurEducational";
-import OurPromoters from "./pages/OurPromoters";
-import OurCampus from "./pages/OurCampus";
-import OurManagement from "./pages/OurManagement";
-import OurFaculty from "./pages/OurFaculty";
-import OurAlumini from "./pages/OurAlumni";
-import OurFramework from "./pages/OurFramework";
+
+import OurEducational from "./pages/About/OurEducational";
+import OurPromoters from "./pages/About/OurPromoters";
+import OurCampus from "./pages/About/OurCampus";
+import OurManagement from "./pages/About/OurManagement";
+import OurFaculty from "./pages/About/OurFaculty";
+import OurAlumini from "./pages/About/OurAlumni";
+import OurFramework from "./pages/About/OurFramework";
+import OurProgrammes from "./pages/Academic/OurProgrammes";
+import OurCurriculum from "./pages/Academic/OurCurriculum";
 
 
 function App() {
@@ -27,8 +29,12 @@ function App() {
           <Route path="/apl-management" element={<OurManagement />} />
           <Route path="/apl-faculty" element={<OurFaculty />} />
           <Route path="/apl-alumni" element={<OurAlumini />} />
+          <Route path="/apl-programmes" element={<OurProgrammes />} />
+          <Route path="/apl-curriculum" element={<OurCurriculum />} />
+          <Route path="/apl-pedagogy" element={<OurAlumini />} />
+          <Route path="/essential-support" element={<OurAlumini />} />
+          <Route path="/apl-department" element={<OurAlumini />} />
           <Route path="/meraki" element={<TabsSectionNew />} />
-          
         </Route>
       </Routes>
     </Router>
