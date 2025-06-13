@@ -13,6 +13,11 @@ import OurAlumini from "./pages/About/OurAlumni";
 import OurFramework from "./pages/About/OurFramework";
 import OurProgrammes from "./pages/Academic/OurProgrammes";
 import OurCurriculum from "./pages/Academic/OurCurriculum";
+import OurPedagogy from "./pages/Academic/OurPedagogy";
+import EssentialSupport from "./pages/Academic/EssentialSupport";
+import Department from "./pages/Academic/Department";
+import KamalamProgram from "./pages/Academic/KamalamProgram";
+import CoCurricularPrograms from "./pages/Child Centered/CoCurricularPrograms";
 
 
 function App() {
@@ -31,9 +36,16 @@ function App() {
           <Route path="/apl-alumni" element={<OurAlumini />} />
           <Route path="/apl-programmes" element={<OurProgrammes />} />
           <Route path="/apl-curriculum" element={<OurCurriculum />} />
-          <Route path="/apl-pedagogy" element={<OurAlumini />} />
-          <Route path="/essential-support" element={<OurAlumini />} />
-          <Route path="/apl-department" element={<OurAlumini />} />
+          <Route path="/apl-pedagogy" element={<OurPedagogy />} />
+          <Route path="/essential-support" element={<EssentialSupport />} />
+          <Route path="/apl-department" element={<Department />} />
+          <Route path="/apl-kamalam-program" element={<KamalamProgram />} />
+          <Route path="/co-curricular-programs" element={<CoCurricularPrograms />} />
+          <Route path="/beyond-classroom" element={<KamalamProgram />} />
+          <Route path="/apl-events" element={<KamalamProgram />} />
+          <Route path="/expressions-clubs" element={<KamalamProgram />} />
+          <Route path="/student-driven-clubs" element={<KamalamProgram />} />
+          <Route path="/youth-awards" element={<KamalamProgram />} />
           <Route path="/meraki" element={<TabsSectionNew />} />
         </Route>
       </Routes>

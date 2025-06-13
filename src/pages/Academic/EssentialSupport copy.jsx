@@ -5,9 +5,38 @@ import AboutBanner_2 from "@/assets/AboutBanner-2.png";
 import AboutGraph from "@/assets/about-graph.svg";
 import Essential from "@/assets/EssentialSupport.png";
 import { MdDoubleArrow } from "react-icons/md";
+import TestimonialCarousel from "@/pages/Home/TestimonialCarousel";
 
 const images = [AboutBanner_1, AboutBanner_2, AboutBanner_1];
-
+const curriculumData = [
+  {
+    title: "Forms of Knowledge",
+    ages: "5–11 years",
+    grades: "I to V",
+    content: [
+      "English",
+      "Math",
+      "Combined Science (Physics, Chemistry, and Biology)",
+      "Global Perspectives",
+      "Second Language - Tamil / French / Hindi (starting in Grade II)",
+      "Art",
+      "Music",
+      "Computer Science (starting in Grade II)",
+    ],
+  },
+  {
+    title: "Co-curricular Activities",
+    content: [
+      "Games & Sports",
+      "Music (till Grade 2)",
+      "Creative Movement",
+      "Theatre",
+      "Expressions",
+      "Library",
+      "Meraki",
+    ],
+  },
+];
 const careerGuidancePoints = [
   "Conducting career talks with APL Alumni and parents as guest speakers",
   "Conducting information sessions for different grade levels on vital information such as entry requirements, entrance exams, timelines, and country-specific requirements.",
@@ -22,6 +51,7 @@ const careerGuidancePoints = [
   "Coordinating and procuring teacher reference letters and predicted grades for Grade 12 students.",
   "Providing letters of recommendation from counsellors.",
 ];
+
 
 function EssentialSupport() {
   const [index, setIndex] = useState(0);
@@ -66,55 +96,20 @@ function EssentialSupport() {
 
               <h3 className="text-xl sm:text-2xl text-primary font-primary">Mentors</h3>
               <p className="text-sm sm:text-base leading-relaxed">
-                ‘Mentoring is a brain to pick, an ear to listen, and a push in
-                the right direction’( John Crosky). We cannot agree more on this
-                as mentoring is a very significant part of APL. The student’s
-                mentor plays a multidimensional role in helping the child with
-                his/her academic, social and emotional needs. Every student at
-                APL is assigned a mentor who will be his/her friend, philosopher
-                and guide in school. Mentors are the first point of contact, and
-                their interaction with the parents helps in building a mutual
-                interest in the mentee’s development.
+                ‘Mentoring is a brain to pick, an ear to listen, and a push in the right direction’ (John Crosky). We cannot agree more...
               </p>
               <p className="text-sm sm:text-base leading-relaxed">
-                Our faculty are trained to understand and support students
-                through a range of issues: academic, social, emotional,
-                developmental. Mentor periods aim to create a space in which the
-                class group is guided by the Class Mentor to discuss and air-out
-                issues specific to the class. Some of the activities that happen
-                at this time are silence, guided meditation, circle time and
-                sharing of news that is relevant to the class.
+                Our faculty are trained to understand and support students...
               </p>
 
               <h3 className="text-xl sm:text-2xl text-primary font-primary">Counseling</h3>
               <p className="text-sm sm:text-base leading-relaxed">
-               Counselors in APL are qualified, experienced & skilled in
-                one-on-one counseling as well as group sessions. The one-on-one
-                sessions meet individual and personal counseling needs of
-                students, understanding and accommodating the emotional spectrum
-                of all students. Psychological guidance in terms of social and
-                moral values are imbibed in students in a clearly defined, fully
-                confidential space. Proactive strategies are put in place to
-                help students with conflict resolution and effective engagement
-                with the community.  At all levels of school, the effort is to
-                create self-awareness and promote emotional literacy, thus
-                creating a school climate promoting healthy living and learning.
+                Counselors in APL are qualified, experienced & skilled in one-on-one counseling...
               </p>
 
               <h3 className="text-xl sm:text-2xl text-primary font-primary">Explore</h3>
               <p className="text-sm sm:text-base leading-relaxed">
-                 Explore is a one-of-a-kind program where sessions are conducted
-                to create a non-judgemental space for students to reflect on
-                various topics. These topics are selected based on areas of
-                social and emotional relevance to the students. It gives
-                students structured time each week to reflect, discuss and make
-                personal meaning under the guidance of a facilitator. These
-                sessions are facilitated by our trained and qualified
-                counsellors.The topics for Explore are discussed using different
-                methodologies like interactive sessions, activities, power-point
-                presentations, role-plays, videos and debates. The content for
-                Explore is designed by the Counsellors and is age-appropriately
-                presented to the students across Grades 2-12.
+                Explore is a one-of-a-kind program where sessions are conducted...
               </p>
 
               <h3 className="text-xl sm:text-2xl text-primary font-primary">Academic and Career Counselors</h3>
@@ -122,17 +117,10 @@ function EssentialSupport() {
                 Ms Preeti Kumar (For Grades 8 & 9), Ms Sujitha Nair (For Grades 10, 11 & 12)
               </p>
               <p className="text-sm sm:text-base leading-relaxed">
-                APL Global School has dedicated academic and college counsellors
-                who guide CAIE & NIOS students to prepare and apply for courses
-                post A levels and NIOS. Through personalized attention and with
-                the help of online resources, counsellors help our young
-                individuals to realize their academic aspirations by identifying
-                their strengths and interests to achieve the same.
+                APL Global School has dedicated academic and college counsellors...
               </p>
               <p className="text-sm sm:text-base leading-relaxed">
-                The academic counsellors support students from Grade 8 through
-                IGCSE and AS/A2 levels in their career/ course planning process
-                by
+                The academic counsellors support students from Grade 8 through...
               </p>
             </div>
 

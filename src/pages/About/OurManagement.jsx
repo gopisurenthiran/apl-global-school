@@ -13,14 +13,14 @@ function OurManagement() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 4000); // Change every 4 seconds
-
+    }, 4000);
     return () => clearInterval(timer);
   }, []);
 
   return (
     <>
-      <section className="relative w-full h-screen overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative w-full min-h-[70vh] sm:min-h-[80vh] md:h-screen overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.img
             key={images[index]}
@@ -34,84 +34,64 @@ function OurManagement() {
           />
         </AnimatePresence>
       </section>
+
+      {/* Management Section */}
       <section
         className="bg-cover bg-center bg-no-repeat w-full"
         style={{ backgroundImage: `url(${AboutGraph})` }}
       >
-        {/* Add an overlay to improve text readability if needed */}
-        <div className=" py-12 px-4 md:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* Left - Content */}
-            <div className="space-y-4">
-              <h2 className="text-3xl md:text-4xl font-extrbold text-primary font-primary inline-block border-b-2 border-secondary mb-6">
+        <div className="py-12 px-4 sm:px-6 md:px-16">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            {/* Left Content */}
+            <div className="space-y-6">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-primary font-primary border-b-2 border-secondary inline-block mb-4">
                 Our Management
               </h2>
-              <h3 className="text-3xl md:text-4xl font-bold text-primary font-primary mt-6 mb-6">
-                GITA JAGANNATHAN{" "}
-                <span className="border-r-2 border-secondary mr-4"></span>
-                FOUNDER
+
+              <h3 className="text-2xl sm:text-3xl font-bold text-primary font-primary mt-4 mb-4 flex items-center gap-3">
+                GITA JAGANNATHAN
+                <span className="h-6 border-l-2 border-secondary"></span>
+                <span className="text-lg font-medium">FOUNDER</span>
               </h3>
-              
-              <p className="text-black font-secondary text-base leading-relaxed">
+
+              <p className="text-black font-secondary text-base sm:text-lg leading-relaxed">
                 Ms. Gita Jagannathan is the owner and founder of APL Global
                 School, Chennai. She is a voracious reader and connoisseur of
-                fine art, music, and humorous tales. She has a penchant for
-                exploration and thirst to constantly evolve; attributes that
-                reflect her growing-up years when she had to make sense of the
-                cumulative experiences of travelling through 8 different
-                schools, her father having been in a transferable job. APL
-                Global School is the outcome of her search for an inclusive and
-                nurturing space. Gifted with a thirst for the whys and hows of a
-                person’s evolution she spent years reaching out, tutoring and
-                mentoring students who were struggling to fit in despite being
-                intelligent, talented, and hardworking.
+                fine art, music, and humorous tales. Her exploration and thirst
+                to evolve reflects in her journey through 8 schools during her
+                father's transferable job. APL Global is the outcome of her
+                search for an inclusive and nurturing space.
               </p>
 
-              <p className="text-black font-secondary text-base leading-relaxed">
-                This drove her to learn more about giftedness, learning
-                disabilities, and special education. She used the Cambridge
-                International Diploma for Teachers and Trainers and a course
-                with Harvard Wide on Differentiated Strategies to deepen her
-                understanding of pedagogy and learning. Gita is a Reiki Grand
-                Master, a hypnotherapist and a student of Yoga. This spiritual
-                sensibility in combination with her skills in psychology and
-                counseling alchemically contributed to the birth of APL school
-                as a space to experience personalized learning for students,
-                faculty members and all stakeholders.
-              </p>
-              <p className="text-black font-secondary text-base leading-relaxed">
-                Gita has put in huge efforts and timeless exploration for the
-                establishment and smooth functioning of the Academy for
-                Personalized Learning or APL Global School. Founding the
-                institute was the beginning of her journey of transforming the
-                education system. Her unique endeavours to make a positive
-                difference in the education sector are far better and more
-                practically-driven as against the conventional form of pedagogy
-                that has been globally followed for so long.
+              <p className="text-black font-secondary text-base sm:text-lg leading-relaxed">
+                She studied giftedness, learning disabilities, and special
+                education via the Cambridge International Diploma and Harvard
+                Wide course. Gita is also a Reiki Grand Master, hypnotherapist,
+                and Yoga student. These spiritual and psychological strengths
+                shaped the vision for APL as a hub for personalized learning.
               </p>
 
-              <p className="text-black font-secondary text-base leading-relaxed">
-                She believes that every human being is unique; that it is
-                possible for each of us to realize our true potential and create
-                an environment that is supportive. In a relatively short span of
-                13 years, under the tutelage of Gita, APL has gained a
-                reputation for providing a caring educational system that
-                develops every facet of a child’s personality. Her aim is to
-                have every student become a happy and healthy individual who
-                confidently explores the limits of their own potential.
+              <p className="text-black font-secondary text-base sm:text-lg leading-relaxed">
+                Gita made tireless efforts to establish APL and transform
+                education with a practical, student-centric approach unlike
+                traditional models. She promotes a belief that everyone is
+                unique and capable of unlocking their true potential.
               </p>
 
-              {/* <button className="mt-4 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition">
-                Learn More
-              </button> */}
+              <p className="text-black font-secondary text-base sm:text-lg leading-relaxed">
+                Under her guidance, APL became known for nurturing every child’s
+                personality within just 13 years. Her mission is to ensure each
+                student grows into a happy, healthy individual confident in
+                exploring their potential.
+              </p>
             </div>
 
-            {/* Right - Image */}
-            <div>
+            {/* Right Image */}
+            <div className="w-full">
               <img
                 src={Management}
                 alt="APL Vision"
-                className="ml-20 object-cover rounded-lg"
+                className="w-full max-w-md md:max-w-full mx-auto rounded-lg object-cover"
               />
             </div>
           </div>

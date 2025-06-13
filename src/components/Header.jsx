@@ -19,6 +19,7 @@ const academicsDropdown = [
   { label: 'Our Pedagogy', href: '/apl-pedagogy' },
   { label: 'Essential Support', href: '/essential-support' },
   { label: 'Department of Special Education', href: '/apl-department' },
+  { label: 'Kamalam Program', href: '/apl-kamalam-program' },
 ];
 
 const admissionDropdown = [
@@ -28,9 +29,12 @@ const admissionDropdown = [
 ];
 
 const childCenteredDropdown = [
-  { label: 'Learning Support', href: '/learning-support' },
-  { label: 'Student Voice', href: '/student-voice' },
-  { label: 'Wellbeing', href: '/wellbeing' },
+  { label: 'Co-Curricular Programs ', href: '/co-curricular-programs' },
+  { label: 'Beyond Classroom', href: '/beyond-classroom' },
+  { label: 'APL Events', href: '/apl-events' },
+  { label: 'Expressions Clubs', href: '/expressions-clubs' },
+  { label: 'Student Driven Clubs', href: '/student-driven-clubs' },
+  { label: 'Youth Awards', href: '/youth-awards' },
 ];
 
 const galleryDropdown = [
@@ -98,62 +102,64 @@ const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-primary text-white shadow-md z-50 relative">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <a href="/" className="flex items-center">
-          <img src={logo} alt="APL Logo" className="h-12 w-auto" />
-        </a>
+    <>
+      <header className="sticky top-0 bg-primary text-white shadow-md z-50">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+          <a href="/" className="flex items-center">
+            <img src={logo} alt="APL Logo" className="h-12 w-auto" />
+          </a>
 
-        <button
-          onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden text-white"
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+          <button
+            onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-white"
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8 items-center font-light relative">
-          <a href="/" className="hover:text-secondary">Home</a>
-          <DropdownMenu label="About APL" items={aboutDropdown} />
-          <DropdownMenu label="Admission" items={admissionDropdown} />
-          <DropdownMenu label="APL Academics" items={academicsDropdown} />
-          <DropdownMenu label="Child-Centered" items={childCenteredDropdown} />
-          <DropdownMenu label="Gallery" items={galleryDropdown} />
-          <a href="#contact" className="hover:text-secondary">Contact</a>
-        </nav>
-      </div>
-
-      {/* Mobile Nav */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden px-4 pb-4">
-          <ul className="space-y-2 font-light text-white/90">
-            <li><a href="/" className="block">Home</a></li>
-            {[ 
-              { label: "About APL", dropdown: aboutDropdown },
-              { label: "Admission", dropdown: admissionDropdown },
-              { label: "APL Academics", dropdown: academicsDropdown },
-              { label: "Child-Centered", dropdown: childCenteredDropdown },
-              { label: "Gallery", dropdown: galleryDropdown },
-            ].map((section) => (
-              <li key={section.label}>
-                <details className="group">
-                  <summary className="flex justify-between items-center cursor-pointer">
-                    {section.label}
-                    <ChevronDown size={14} className="group-open:rotate-180 transition" />
-                  </summary>
-                  <ul className="pl-4 mt-1 space-y-1 text-sm">
-                    {section.dropdown.map((item) => (
-                      <li key={item.label}><a href={item.href}>{item.label}</a></li>
-                    ))}
-                  </ul>
-                </details>
-              </li>
-            ))}
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex gap-8 items-center font-light relative">
+            <a href="/" className="hover:text-secondary">Home</a>
+            <DropdownMenu label="About APL" items={aboutDropdown} />
+            <DropdownMenu label="Admission" items={admissionDropdown} />
+            <DropdownMenu label="APL Academics" items={academicsDropdown} />
+            <DropdownMenu label="Child-Centered" items={childCenteredDropdown} />
+            <DropdownMenu label="Gallery" items={galleryDropdown} />
+            <a href="#contact" className="hover:text-secondary">Contact</a>
+          </nav>
         </div>
-      )}
-    </header>
+
+        {/* Mobile Nav */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden px-4 pb-4">
+            <ul className="space-y-2 font-light text-white/90">
+              <li><a href="/" className="block">Home</a></li>
+              {[
+                { label: "About APL", dropdown: aboutDropdown },
+                { label: "Admission", dropdown: admissionDropdown },
+                { label: "APL Academics", dropdown: academicsDropdown },
+                { label: "Child-Centered", dropdown: childCenteredDropdown },
+                { label: "Gallery", dropdown: galleryDropdown },
+              ].map((section) => (
+                <li key={section.label}>
+                  <details className="group">
+                    <summary className="flex justify-between items-center cursor-pointer">
+                      {section.label}
+                      <ChevronDown size={14} className="group-open:rotate-180 transition" />
+                    </summary>
+                    <ul className="pl-4 mt-1 space-y-1 text-sm">
+                      {section.dropdown.map((item) => (
+                        <li key={item.label}><a href={item.href}>{item.label}</a></li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ))}
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        )}
+      </header>
+    </>
   );
 };
 
