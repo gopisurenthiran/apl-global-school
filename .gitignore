@@ -22,7 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-public/assets/pdf/SnapShot.pdf
 
 # Playwright
 /test-results/
