@@ -63,7 +63,7 @@ function FeesAndStreams() {
             We welcome your application for admission to our school. To know
             more about the admission process{" "}
             <a
-              href="https://sch.edulip.in/resources_v2/protected/125/FixedFiles/25-26.pdf"
+              href="/assets/pdf/final-admission-process-ay-2026-27.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary font-semibold underline hover:text-primary transition duration-300"
