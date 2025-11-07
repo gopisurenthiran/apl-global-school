@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Plus, Minus } from "lucide-react";
-import Img1 from "/assets/Img-1.webp";
-import Img2 from "/assets/Img-2.webp";
-import Img3 from "/assets/Img-3.webp";
+import Img1 from "/assets/school-1.jpg";
+import Img2 from "/assets/school-2.jpg";
 // import highlights from "/data/Gallery"; // Uncomment if needed
 
-const images = [Img1, Img2, Img3];
+const images = [Img1, Img2];
 
 export default function GallerySection() {
   const [activeIndex, setActiveIndex] = useState(0);
