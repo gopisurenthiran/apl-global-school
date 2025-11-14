@@ -66,7 +66,7 @@ const navItems = [
     dropdown: [
       { label: "Teacher Mentor Centre", path: "/teacher" },
       { label: "CIDTL", path: "/cidtl" },
-      { label: "Careers", path: "/careers" },
+    
     ],
   },
 ];

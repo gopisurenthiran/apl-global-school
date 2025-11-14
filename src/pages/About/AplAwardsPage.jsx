@@ -6,6 +6,7 @@ import { MdDoubleArrow } from "react-icons/md";
 
 // Images
 import award1 from "/assets/award-1.webp";
+import award15 from "/assets/33rd.jpg";
 import award2 from "/assets/award-2.webp";
 import award3 from "/assets/award-3.png";
 import award4 from "/assets/ceii.jpg";
@@ -50,6 +51,14 @@ const isYouTubeLink = (url) =>
 
 
 const awards = [
+    {
+    title: "33rd Elets World Education Summit",
+    year: "2025",
+    description:
+      "Honouring excellence and innovation shaping the future of education.",
+    image: award15,
+    link: "#",
+  },
   
   {
     title: "Excellence in Activity Based Learning",
