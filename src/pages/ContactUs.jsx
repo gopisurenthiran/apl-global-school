@@ -54,11 +54,11 @@ export default function ContactUsPage() {
           <h3 className="font-bold font-primary text-xl uppercase text-primary">
             APL Global School
           </h3>
-          <p>No 63/1, Anand Nagar Main Road,</p>
-          <p>Chokkalingam Nagar,</p>
-          <p>Chennai 600 087, India</p>
-          <p>Ph: 044 6675 1193</p>
-          <p>Email: admin@aplschool.in</p>
+          <p>No 697/3, Anand Nagar Main Road,</p>
+          <p>Thoraipakkam,</p>
+          <p>Chennai 600 097, India</p>
+          <p>Ph: 044 4076 1199</p>
+          <p>Email: admin@apl.edu.in</p>
           <p>Website: www.aplglobalschool.com</p>
           <div className="mt-6">
             <p className="font-primary uppercase text-primary text-xl">
