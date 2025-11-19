@@ -8,7 +8,7 @@ const DEFAULT_ITEMS = [
   { src: "/assets/apl-affliations-2.webp", alt: "IKA 2022 Award" },
   { src: "/assets/apl-affliations-3.webp", alt: "Certificate of Excellence" },
   { src: "/assets/apl-affliations-4.webp", alt: "Certificate of Excellence" },
-  { src: "/assets/apl-affliations-5.webp", alt: "Certificate of Excellence" },
+
 ];
 
 export default function CertificatesCarousel({ items = DEFAULT_ITEMS }) {
