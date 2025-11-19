@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MdDoubleArrow } from "react-icons/md";
 
 // Images
+import cdec from "/assets/cdec.png";
+import ete from "/assets/ete.png";
 import award1 from "/assets/award-1.webp";
 import award15 from "/assets/33rd.jpg";
 import award2 from "/assets/award-2.webp";
@@ -51,6 +53,22 @@ const isYouTubeLink = (url) =>
 
 
 const awards = [
+    {
+    title: "Creative & Distinguished Educators Conclave ",
+    year: "2025",
+    description:
+      "The Creative & Distinguished Educators Conclave (CDEC) 2025 held in October this year in Chennai focused on generating new insights into education, fostering meaningful conversations, and recognising efforts related to Universal Design for Learning (UDL): Reaching Every Child. The panel discussions focused on strategies to transform classrooms into innovative clubs, how forward-thinking schools are turning AI disruption into opportunities and shared inspiring journeys from educators who chose to lead.Among other awardees, APl Global School was recognised and awarded as an Inclusion Education Institution.",
+    image: cdec,
+    link: "#",
+  },
+    {
+    title: "ETEducation EDNXT Chennai",
+    year: "2025",
+    description:
+      "The ETEducation EDNXT Chennai, held in September 2025, Chennai brought together education leaders, government officials, policymakers, and innovators—to chart the course of India’s tech-driven education future. Our principal, Ms Sarija Santhosh was invited to be a speaker in the panel discussion - The Education Transformation: AI, Access, and Acceleration – Shaping the Next Era of Chennai’s School Education. The discussion centered around the vision for positioning Chennai as India’s hub for AI-powered, inclusive, and skill-centric school education, driving innovation and opportunity for the next generation.",
+    image: ete,
+    link: "#",
+  },
     {
     title: "33rd Elets World Education Summit",
     year: "2025",
