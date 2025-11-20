@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MdDoubleArrow } from "react-icons/md";
 
 // Images
-import cdec from "/assets/cdec.png";
+import cdec from "/assets/cdec-1.png";
 import ete from "/assets/ete.png";
 import award1 from "/assets/award-1.webp";
 import award15 from "/assets/33rd.jpg";
@@ -77,22 +77,34 @@ const awards = [
     image: award15,
     link: "#",
   },
-  
-  {
-    title: "Excellence in Activity Based Learning",
-    year: "2019",
+    {
+    title: "Excellence in Global Education",
+    year: "2024",
     description:
-      "APL received the prestigious award for 'Excellence in Activity Based Learning' in the ELDROK India K-12 Summit 2019.",
-    image: award2,
-    link: "https://youtu.be/-GZY7rW1PzA",
+      "Our school was featured in The Knowledge Review Magazine as one of  'The Most Excellent International Schools to Study in India, 2024' The Knowledge Review Magazine is a global education magazine (print and online) that deals with the introduction of institutes and leaders around the world for educational information, with a focus on institutions, and educational leaders around the world while intending to evaluate learners. and educators about education systems, technologies, opportunities, trends, and strategies.",
+    image: award10,
+    link: "#",
   },
   {
-    title: "CEII Most Innovational Pedagogy Award 2020–21",
-    year: "2021",
-    description:
-      " APL was awarded the “CEII most Innovational Pedagogy award 2020-21 in Tamil Nadu region. It was also conferred with an honorary membership of CEII’s Academy Guild, a privilege shared by 20 odd schools pan India.",
-    image: award4,
-    link: "https://youtu.be/1pOqrxeg65w",
+    title: "IKA 2024 - Chennai",
+    year: "2024",
+    description: "Our principal, Ms. Sarija Santhosh was awarded the 'IKA 2024 - Chennai' in recognition for excellence in Promoting Extra Curricular Activities for Holistic Development. The honour was bestowed by Eldrok India K-12 Summit - 2024', on 6th August, 2024, in an event held at ITC Grand Chola, Chennai.",
+    image: award11,
+    link: "#",
+  },
+    {
+    title: "IDA Education Awards 2024",
+    year: "2024",
+    description: "APL was the winner of The IDA Education Awards 2024 under the category of  'Fostering Inclusive Education'. We were recognised for our contributions and dedication to the field of education and for setting an inspiring example for educators and institutions across the nation in creating a respectful, supportive and inclusive environment by bridging gaps across multiple learning levels of students",
+    image: award12,
+    link: "#",
+  },
+      {
+    title: "Most Outstanding School Award",
+    year: "2024",
+    description: "We were awarded “The Most Outstanding School” in the regional rankings by The Global Educators Conclave (GEO),  a prestigious platform for visionary school leaders, academic heads, educators, policy advocates, and education innovators from Tamil Nadu and beyond.",
+    image: award13,
+    link: "#",
   },
   {
     title: "Women's Empowerment Entrepreneur 2019",
@@ -142,35 +154,26 @@ const awards = [
     image: award8,
     link: "https://www.youtube.com/watch?v=vGH87-gshCg&t=16s",
   },
+  
+
   {
-    title: "Excellence in Global Education",
-    year: "2024",
+    title: "CEII Most Innovational Pedagogy Award 2020–21",
+    year: "2021",
     description:
-      "Our school was featured in The Knowledge Review Magazine as one of  'The Most Excellent International Schools to Study in India, 2024' The Knowledge Review Magazine is a global education magazine (print and online) that deals with the introduction of institutes and leaders around the world for educational information, with a focus on institutions, and educational leaders around the world while intending to evaluate learners. and educators about education systems, technologies, opportunities, trends, and strategies.",
-    image: award10,
-    link: "#",
-  },
-  {
-    title: "IKA 2024 - Chennai",
-    year: "2024",
-    description: "Our principal, Ms. Sarija Santhosh was awarded the 'IKA 2024 - Chennai' in recognition for excellence in Promoting Extra Curricular Activities for Holistic Development. The honour was bestowed by Eldrok India K-12 Summit - 2024', on 6th August, 2024, in an event held at ITC Grand Chola, Chennai.",
-    image: award11,
-    link: "#",
+      " APL was awarded the “CEII most Innovational Pedagogy award 2020-21 in Tamil Nadu region. It was also conferred with an honorary membership of CEII’s Academy Guild, a privilege shared by 20 odd schools pan India.",
+    image: award4,
+    link: "https://youtu.be/1pOqrxeg65w",
   },
     {
-    title: "IDA Education Awards 2024",
-    year: "2024",
-    description: "APL was the winner of The IDA Education Awards 2024 under the category of  'Fostering Inclusive Education'. We were recognised for our contributions and dedication to the field of education and for setting an inspiring example for educators and institutions across the nation in creating a respectful, supportive and inclusive environment by bridging gaps across multiple learning levels of students",
-    image: award12,
-    link: "#",
+    title: "Excellence in Activity Based Learning",
+    year: "2019",
+    description:
+      "APL received the prestigious award for 'Excellence in Activity Based Learning' in the ELDROK India K-12 Summit 2019.",
+    image: award2,
+    link: "https://youtu.be/-GZY7rW1PzA",
   },
-      {
-    title: "Most Outstanding School Award",
-    year: "2024",
-    description: "We were awarded “The Most Outstanding School” in the regional rankings by The Global Educators Conclave (GEO),  a prestigious platform for visionary school leaders, academic heads, educators, policy advocates, and education innovators from Tamil Nadu and beyond.",
-    image: award13,
-    link: "#",
-  },
+  
+
 
 ];
 
