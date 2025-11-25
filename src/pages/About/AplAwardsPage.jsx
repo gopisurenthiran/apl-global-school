@@ -7,7 +7,6 @@ import { MdDoubleArrow } from "react-icons/md";
 // Images
 import cdec from "/assets/cdec-1.png";
 import ete from "/assets/ete.png";
-import award1 from "/assets/award-1.webp";
 import award15 from "/assets/33rd.jpg";
 import award2 from "/assets/award-2.webp";
 import award3 from "/assets/award-3.png";
@@ -21,7 +20,6 @@ import award10 from "/assets/award-10.png";
 import award11 from "/assets/ika.png";
 import award12 from "/assets/award-12.png";
 import award13 from "/assets/outstanding.png";
-import award14 from "/assets/award-14.png";
 
 // Sections
 import APLVAlue3 from "../others/AplValue3";
